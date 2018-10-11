@@ -13,7 +13,11 @@
 * - disable low voltage programming
 */
 
-
+/*Notes to myself:
+ * The printing of the address and message to the XLCD could be done in one function
+ * to be called.
+ 
+ */
 
 
 #pragma config OSC = HS
@@ -55,14 +59,28 @@ OS_STK TaskBStk[TASK_STK_SIZE];
 
 int globalVar = 0; //Global Variable for TaskA & TaskB
 
+void configXLCD()
+{
+   OpenXLCD(FOUR_BIT & LINES_5X7);           //Configure LCD Screen
+   while (BusyXLCD()){};
+   WriteCmdXLCD(SHIFT_DISP_LEFT);
+}
+
 void TaskA(void *pdata)
 {
-
-	TRISBbits.RB0 = 0;                       //Configure PORTB pin 1 as an output
-	while (globalVar != 1)
+    
+   TRISBbits.RB0 = 0;                       //Configure PORTB pin 1 as an output
+   configXLCD();                            //Configure XLCD 
+   
+   while (globalVar != 1)
 	{
                                              //Code for printing string 
-                                             //* Within the loop -- print string "Task 1 rocks! \n" to LCD top row
+        SetDDRamAddr(0x00);                  //* Within the loop -- print string "Task 1 rocks! \n" to LCD top row
+        while (BusyXLCD()){};
+        putrsXLCD("Task 1 rocks!");
+        while (BusyXLCD()){};
+        
+       //Set the cursor to the first cell in the top row
         PORTBbits.RB0 = !PORTBbits.RB0;      //toggle PORTB pin 1
 		OSTimeDlyHMSM(0, 0, 1, 0);           //Delay for 1 sec
 	}
@@ -78,10 +96,21 @@ void TaskA(void *pdata)
 */
 void TaskB(void *pdata)
 {
-	TRISBbits.RB1 = 0;
+ 
+	TRISBbits.RB1 = 0;                      //Configure PORTB RB1 as an output
+    configXLCD();                           //Configure XLCD
+    
 	while (globalVar != 1)
 	{
-		//Code for printing the next string 
+        //Code for printing the next string 
+        //* TaskB will loop until the global variable stopped is set.
+        //* Within the loop -- print string "Task 2 rules?\n" to LCD bottom row
+        
+        SetDDRamAddr(0x54);                 //Sets the LCD cursor to the last row first position               
+        while (BusyXLCD()){};
+        putrsXLCD("Task 2 rules?\n");       //String message
+        while (BusyXLCD()){};
+		
 		PORTBbits.RB1 = !PORTBbits.RB1;     //Toggle PORTB pin 2
 		OSTimeDly(200);                     //Delay of 200 ticks
 	}
