@@ -1,0 +1,925 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Wed Oct 10 21:37:39 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+               highVector       code   0x000008    program   0x00000c
+                lowVector       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x00001a
+          .code_ucos_ii.o       code   0x000044    program   0x002c10
+         .code_os_cpu_c.o       code   0x002c54    program   0x000566
+.code_code_lab2_816002553.o       code   0x0031ba    program   0x0000dc
+               _cinit_scn       code   0x003296    program   0x00009e
+          .code_fxm3232.o       code   0x003334    program   0x000070
+         .code_fxd3232u.o       code   0x0033a4    program   0x000048
+              D1KTCYXCODE       code   0x0033ec    program   0x000020
+                    .code       code   0x00340c    program   0x000020
+             _startup_scn       code   0x00342c    program   0x00001c
+          .code_vectors.o       code   0x003448    program   0x00001a
+             .stringtable    romdata   0x003462    program   0x000002
+           .code___init.o       code   0x003464    program   0x000002
+      .romdata_fxd3232u.o    romdata   0x003466    program   0x000000
+       .romdata_fxm3232.o    romdata   0x003466    program   0x000000
+       .romdata_vectors.o    romdata   0x003466    program   0x000000
+       .idata_vectors.o_i    romdata   0x003466    program   0x000000
+        .romdata___init.o    romdata   0x003466    program   0x000000
+       .romdata_ucos_ii.o    romdata   0x003466    program   0x000000
+       .idata_ucos_ii.o_i    romdata   0x003466    program   0x000172
+      .romdata_os_cpu_c.o    romdata   0x003466    program   0x000000
+.romdata_code_lab2_816002553.o    romdata   0x003466    program   0x000000
+         .romdata_c018i.o    romdata   0x003466    program   0x000000
+      .idata_os_cpu_c.o_i    romdata   0x0035d8    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x0035d8    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x0035d8    program   0x000000
+.idata_code_lab2_816002553.o_i    romdata   0x0035d8    program   0x000002
+        .idata___init.o_i    romdata   0x0035da    program   0x000000
+            .code_c018i.o       code   0x0035da    program   0x000000
+         .idata_c018i.o_i    romdata   0x0035da    program   0x000000
+.config_300001_code_lab2_816002553.o    romdata   0x300001    program   0x000001
+.config_300003_code_lab2_816002553.o    romdata   0x300003    program   0x000001
+.config_300006_code_lab2_816002553.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000014
+                MATH_DATA      udata   0x000014       data   0x000010
+                DELAYDAT1      udata   0x000024       data   0x000001
+                   .stack      udata   0x000080       data   0x000030
+         .udata_ucos_ii.o      udata   0x0000b0       data   0x000231
+         .idata_ucos_ii.o      idata   0x0002e1       data   0x000172
+.udata_code_lab2_816002553.o      udata   0x000453       data   0x0000f0
+           .udata_c018i.o      udata   0x000543       data   0x00000a
+.idata_code_lab2_816002553.o      idata   0x00054d       data   0x000002
+        .idata_os_cpu_c.o      idata   0x00054f       data   0x000000
+        .udata_os_cpu_c.o      udata   0x00054f       data   0x000000
+         .udata_vectors.o      udata   0x00054f       data   0x000000
+         .idata_vectors.o      idata   0x00054f       data   0x000000
+           .idata_c018i.o      idata   0x00054f       data   0x000000
+        .udata_fxd3232u.o      udata   0x00054f       data   0x000000
+        .idata_fxd3232u.o      idata   0x00054f       data   0x000000
+         .udata_fxm3232.o      udata   0x00054f       data   0x000000
+         .idata_fxm3232.o      idata   0x00054f       data   0x000000
+          .udata___init.o      udata   0x00054f       data   0x000000
+          .idata___init.o      idata   0x00054f       data   0x000000
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x000013      
+                            0x000018    0x00001d      
+                            0x00002a    0x0035d9      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            13771 out of 33048 program addresses used, program memory utilization is 41%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+     CPUhighInterruptHook   0x00345c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+            CPUhighVector   0x000008    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+          CPUlowInterrupt   0x003060    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+      CPUlowInterruptHook   0x003448    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+             CPUlowVector   0x000018    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                    D1K_1   0x0033f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0033f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+              Delay1KTCYx   0x0033ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x0031ba    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+             DelayPORXLCD   0x0031e0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                DelayXLCD   0x0031ec    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                 FXD3232U   0x0033a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x003334    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                  OSCtxSw   0x002f6a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+              OSDebugInit   0x002ac0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                   OSInit   0x000044    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+          OSInitHookBegin   0x002ee2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSInitHookEnd   0x002ee4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+               OSIntCtxSw   0x0030f2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+               OSIntEnter   0x000062    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OSIntExit   0x000076    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OSMemCreate   0x000e7a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+                 OSMemGet   0x00110c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+             OSMemNameGet   0x00121c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+             OSMemNameSet   0x0012da    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+                 OSMemPut   0x001356    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+               OSMemQuery   0x00144e    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+              OSSchedLock   0x00011c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+            OSSchedUnlock   0x000168    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                  OSStart   0x0001ce    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OSStartHighRdy   0x002ee6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+               OSStatInit   0x000206    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+            OSTCBInitHook   0x002ea8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+         OSTaskChangePrio   0x00179c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskCreate   0x001a4a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+         OSTaskCreateHook   0x002e68    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                OSTaskDel   0x001bce    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+            OSTaskDelHook   0x002e84    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+             OSTaskDelReq   0x001ea2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+           OSTaskIdleHook   0x002ec4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+              OSTaskQuery   0x00229c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskRegGet   0x002380    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskRegSet   0x00247c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskResume   0x001fac    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+         OSTaskReturnHook   0x002ec6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+           OSTaskStatHook   0x002ea4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSTaskStkInit   0x002c54    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSTaskSuspend   0x00211a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskSwHook   0x002ea0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                OSTimeDly   0x00255c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+            OSTimeDlyHMSM   0x00264e    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+          OSTimeDlyResume   0x00283c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+                OSTimeGet   0x0029f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+                OSTimeSet   0x002a74    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+               OSTimeTick   0x000298    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OSTimeTickHook   0x002ea6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                OSVersion   0x0004c6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                 OS_Dummy   0x0004d2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+         OS_InitEventList   0x0004d4    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_InitMisc   0x0004d6    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OS_InitRdyList   0x00051e    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OS_InitTCBList   0x0005d8    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+          OS_InitTaskIdle   0x000570    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+          OS_InitTaskStat   0x0005a4    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OS_MemClr   0x0006f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OS_MemCopy   0x00074c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OS_MemInit   0x001632    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+                 OS_Sched   0x0007ba    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_SchedNew   0x00084e    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OS_StrLen   0x0008a8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OS_TCBInit   0x000a7a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_TaskIdle   0x0008ec    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+            OS_TaskReturn   0x002542    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+              OS_TaskStat   0x00094a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                    TaskA   0x0031f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                    TaskB   0x003250    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+        _D1KTCYXCODE_0010   0x0033fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x003402    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+           ___do_lbl00015   0x002f22    program     static                          
+           ___do_lbl00016   0x002f26    program     static                          
+           ___do_lbl00017   0x002f14    program     static                          
+           ___do_lbl00022   0x003018    program     static                          
+           ___do_lbl00023   0x00301c    program     static                          
+           ___do_lbl00024   0x00300a    program     static                          
+           ___do_lbl00035   0x003172    program     static                          
+           ___do_lbl00036   0x003176    program     static                          
+           ___do_lbl00037   0x003164    program     static                          
+           ___if_lbl00014   0x002f0e    program     static                          
+           ___if_lbl00021   0x002fd6    program     static                          
+           ___if_lbl00031   0x003120    program     static                          
+           ___if_lbl00034   0x00315e    program     static                          
+       ___return_lbl00000   0x0033a2    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x0033ea    program     static                          
+       ___return_lbl00000   0x0031de    program     static                          
+       ___return_lbl00001   0x003446    program     static                          
+       ___return_lbl00002   0x003332    program     static                          
+       ___return_lbl00003   0x002ea2    program     static                          
+       ___return_lbl00011   0x002f68    program     static                          
+       ___return_lbl00018   0x00305e    program     static                          
+       ___return_lbl00025   0x000012    program     static                          
+       ___return_lbl00026   0x00001c    program     static                          
+       ___return_lbl00027   0x0030f0    program     static                          
+       ___return_lbl00028   0x0031b8    program     static                          
+        ___while_lbl00012   0x002efe    program     static                          
+        ___while_lbl00013   0x002f08    program     static                          
+        ___while_lbl00019   0x002fb4    program     static                          
+        ___while_lbl00020   0x002fcc    program     static                          
+        ___while_lbl00029   0x0030fe    program     static                          
+        ___while_lbl00030   0x003116    program     static                          
+        ___while_lbl00032   0x00314e    program     static                          
+        ___while_lbl00033   0x003158    program     static                          
+               __config_0   0x300001    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+               __config_1   0x300003    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+               __config_2   0x300006    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                   __init   0x003464    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x003462    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            __zero_memory   0x00340c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x003296    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _false   0x0033e6    program     static                          
+                 _startup   0x00342c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x003422    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x003308    program     static                          
+            copy_one_byte   0x00330e    program     static                          
+                     done   0x003332    program     static                          
+             done_copying   0x00331c    program     static                          
+                     loop   0x0033b2    program     static                          
+                     loop   0x00343c    program     static                          
+                   loop_h   0x00341a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x003424    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     main   0x003294    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                     test   0x0032b0    program     static                          
+               zero_block   0x00341a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+            DelayCounter1   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCPUUsage   0x0000b4       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+               OSCtxSwCtr   0x0000b0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+               OSDataSize   0x000451       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSDebugEn   0x0003e1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+         OSEndiannessTest   0x0003e3       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSEventEn   0x0003e7       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               OSEventMax   0x0003e9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSEventMultiEn   0x0003f1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSEventNameEn   0x0003eb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSEventSize   0x0003ed       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSEventTblSize   0x0003ef       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSFlagEn   0x0003f3       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSFlagGrpSize   0x0003f5       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSFlagMax   0x0003fb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSFlagNameEn   0x0003fd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSFlagNodeSize   0x0003f7       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSFlagWidth   0x0003f9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSIdleCtr   0x000146       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIdleCtrMax   0x0000b5       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIdleCtrRun   0x0000b9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIntNesting   0x00013e       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSLockNesting   0x00013f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSLowestPrio   0x0003ff       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSMboxEn   0x000401       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSMemEn   0x000403       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSMemFreeList   0x000281       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSMemMax   0x000405       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSMemNameEn   0x000407       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSMemSize   0x000409       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSMemTbl   0x000283       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSMemTblSize   0x00040b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSMutexEn   0x00040d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSPrioCur   0x000140       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSPrioHighRdy   0x000141       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSPtrSize   0x00040f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                    OSQEn   0x000411       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                   OSQMax   0x000413       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSQSize   0x000415       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSRdyGrp   0x000142       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSRdyTbl   0x000143       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSRdyTblSize   0x000417       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSRunning   0x000144       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                  OSSemEn   0x000419       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSStatRdy   0x0000bd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+               OSStkWidth   0x00041b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSTCBCur   0x0001ca       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSTCBFreeList   0x0001cc       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSTCBHighRdy   0x0001ce       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSTCBList   0x0001d0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSTCBPrioTbl   0x0001d2       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+          OSTCBPrioTblMax   0x000435       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTCBSize   0x000437       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSTCBTbl   0x0001e0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+           OSTaskCreateEn   0x00041d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTaskCreateExtEn   0x00041f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTaskCtr   0x000145       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+              OSTaskDelEn   0x000421       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSTaskIdleStk   0x00014a       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+        OSTaskIdleStkSize   0x000423       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTaskMax   0x000427       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTaskNameEn   0x000429       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+          OSTaskProfileEn   0x000425       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+         OSTaskRegTblSize   0x000433       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTaskStatEn   0x00042b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSTaskStatStk   0x0000be       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+       OSTaskStatStkChkEn   0x00042f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTaskStatStkSize   0x00042d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTaskSwHookEn   0x000431       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+          OSTickStepState   0x000280       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSTicksPerSec   0x000439       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                   OSTime   0x0002dd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+         OSTimeTickHookEn   0x00043b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSTmrCfgMax   0x000441       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTmrCfgNameEn   0x000443       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+      OSTmrCfgTicksPerSec   0x000447       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTmrCfgWheelSize   0x000445       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSTmrEn   0x00043f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTmrSize   0x000449       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTmrTblSize   0x00044b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTmrWheelSize   0x00044d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTmrWheelTblSize   0x00044f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               OSUnMapTbl   0x0002e1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+             OSVersionNbr   0x00043d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     SIGN   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 TaskAStk   0x000453       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                 TaskBStk   0x0004cb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 __AARGB0   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                curr_byte   0x000546       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x000548       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x00054a       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                globalVar   0x00054d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                     prom   0x000543       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+            CPUhighVector   0x000008    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+       ___return_lbl00025   0x000012    program     static                          
+             CPUlowVector   0x000018    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+       ___return_lbl00026   0x00001c    program     static                          
+                   OSInit   0x000044    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OSIntEnter   0x000062    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OSIntExit   0x000076    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OSSchedLock   0x00011c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+            OSSchedUnlock   0x000168    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                  OSStart   0x0001ce    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OSStatInit   0x000206    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OSTimeTick   0x000298    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OSVersion   0x0004c6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                 OS_Dummy   0x0004d2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+         OS_InitEventList   0x0004d4    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_InitMisc   0x0004d6    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OS_InitRdyList   0x00051e    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+          OS_InitTaskIdle   0x000570    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+          OS_InitTaskStat   0x0005a4    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+           OS_InitTCBList   0x0005d8    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OS_MemClr   0x0006f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OS_MemCopy   0x00074c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                 OS_Sched   0x0007ba    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_SchedNew   0x00084e    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OS_StrLen   0x0008a8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_TaskIdle   0x0008ec    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OS_TaskStat   0x00094a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+               OS_TCBInit   0x000a7a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+              OSMemCreate   0x000e7a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+                 OSMemGet   0x00110c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+             OSMemNameGet   0x00121c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+             OSMemNameSet   0x0012da    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+                 OSMemPut   0x001356    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+               OSMemQuery   0x00144e    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+               OS_MemInit   0x001632    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_mem.c
+         OSTaskChangePrio   0x00179c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskCreate   0x001a4a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+                OSTaskDel   0x001bce    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskDelReq   0x001ea2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskResume   0x001fac    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+            OSTaskSuspend   0x00211a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+              OSTaskQuery   0x00229c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskRegGet   0x002380    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+             OSTaskRegSet   0x00247c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+            OS_TaskReturn   0x002542    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
+                OSTimeDly   0x00255c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+            OSTimeDlyHMSM   0x00264e    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+          OSTimeDlyResume   0x00283c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+                OSTimeGet   0x0029f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+                OSTimeSet   0x002a74    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_time.c
+              OSDebugInit   0x002ac0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSTaskStkInit   0x002c54    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+         OSTaskCreateHook   0x002e68    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSTaskDelHook   0x002e84    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+             OSTaskSwHook   0x002ea0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+       ___return_lbl00003   0x002ea2    program     static                          
+           OSTaskStatHook   0x002ea4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+           OSTimeTickHook   0x002ea6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSTCBInitHook   0x002ea8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+           OSTaskIdleHook   0x002ec4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+         OSTaskReturnHook   0x002ec6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+          OSInitHookBegin   0x002ee2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+            OSInitHookEnd   0x002ee4    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+           OSStartHighRdy   0x002ee6    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+        ___while_lbl00012   0x002efe    program     static                          
+        ___while_lbl00013   0x002f08    program     static                          
+           ___if_lbl00014   0x002f0e    program     static                          
+           ___do_lbl00017   0x002f14    program     static                          
+           ___do_lbl00015   0x002f22    program     static                          
+           ___do_lbl00016   0x002f26    program     static                          
+       ___return_lbl00011   0x002f68    program     static                          
+                  OSCtxSw   0x002f6a    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+        ___while_lbl00019   0x002fb4    program     static                          
+        ___while_lbl00020   0x002fcc    program     static                          
+           ___if_lbl00021   0x002fd6    program     static                          
+           ___do_lbl00024   0x00300a    program     static                          
+           ___do_lbl00022   0x003018    program     static                          
+           ___do_lbl00023   0x00301c    program     static                          
+       ___return_lbl00018   0x00305e    program     static                          
+          CPUlowInterrupt   0x003060    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+       ___return_lbl00027   0x0030f0    program     static                          
+               OSIntCtxSw   0x0030f2    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+        ___while_lbl00029   0x0030fe    program     static                          
+        ___while_lbl00030   0x003116    program     static                          
+           ___if_lbl00031   0x003120    program     static                          
+        ___while_lbl00032   0x00314e    program     static                          
+        ___while_lbl00033   0x003158    program     static                          
+           ___if_lbl00034   0x00315e    program     static                          
+           ___do_lbl00037   0x003164    program     static                          
+           ___do_lbl00035   0x003172    program     static                          
+           ___do_lbl00036   0x003176    program     static                          
+       ___return_lbl00028   0x0031b8    program     static                          
+            DelayFor18TCY   0x0031ba    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+       ___return_lbl00000   0x0031de    program     static                          
+             DelayPORXLCD   0x0031e0    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                DelayXLCD   0x0031ec    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                    TaskA   0x0031f8    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                    TaskB   0x003250    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                     main   0x003294    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                _do_cinit   0x003296    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0032b0    program     static                          
+                copy_loop   0x003308    program     static                          
+            copy_one_byte   0x00330e    program     static                          
+             done_copying   0x00331c    program     static                          
+       ___return_lbl00002   0x003332    program     static                          
+                     done   0x003332    program     static                          
+                  FXM3232   0x003334    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x0033a2    program     static                          
+                 FXD3232U   0x0033a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0033b2    program     static                          
+                   _false   0x0033e6    program     static                          
+       ___return_lbl00000   0x0033ea    program     static                          
+              Delay1KTCYx   0x0033ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0033f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x0033f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x0033fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x003402    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x00340c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x00341a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x00341a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x003422    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x003424    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x00342c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00343c    program     static                          
+       ___return_lbl00001   0x003446    program     static                          
+      CPUlowInterruptHook   0x003448    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+     CPUhighInterruptHook   0x00345c    program     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+               __string_0   0x003462    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                   __init   0x003464    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+               __config_1   0x300003    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+               __config_2   0x300006    program     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
+                  __tmp_0   0x000000       data     static C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                     SIGN   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            DelayCounter1   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+               OSCtxSwCtr   0x0000b0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+               OSCPUUsage   0x0000b4       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIdleCtrMax   0x0000b5       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIdleCtrRun   0x0000b9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSStatRdy   0x0000bd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSTaskStatStk   0x0000be       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSIntNesting   0x00013e       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSLockNesting   0x00013f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSPrioCur   0x000140       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSPrioHighRdy   0x000141       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSRdyGrp   0x000142       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSRdyTbl   0x000143       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSRunning   0x000144       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSTaskCtr   0x000145       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSIdleCtr   0x000146       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSTaskIdleStk   0x00014a       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSTCBCur   0x0001ca       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSTCBFreeList   0x0001cc       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSTCBHighRdy   0x0001ce       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                OSTCBList   0x0001d0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+             OSTCBPrioTbl   0x0001d2       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSTCBTbl   0x0001e0       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+          OSTickStepState   0x000280       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+            OSMemFreeList   0x000281       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                 OSMemTbl   0x000283       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+                   OSTime   0x0002dd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers\ucos_ii.h
+               OSUnMapTbl   0x0002e1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
+                OSDebugEn   0x0003e1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+         OSEndiannessTest   0x0003e3       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSEventEn   0x0003e7       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               OSEventMax   0x0003e9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSEventNameEn   0x0003eb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSEventSize   0x0003ed       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSEventTblSize   0x0003ef       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSEventMultiEn   0x0003f1       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSFlagEn   0x0003f3       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSFlagGrpSize   0x0003f5       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSFlagNodeSize   0x0003f7       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSFlagWidth   0x0003f9       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSFlagMax   0x0003fb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSFlagNameEn   0x0003fd       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSLowestPrio   0x0003ff       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSMboxEn   0x000401       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSMemEn   0x000403       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 OSMemMax   0x000405       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSMemNameEn   0x000407       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSMemSize   0x000409       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSMemTblSize   0x00040b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSMutexEn   0x00040d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSPtrSize   0x00040f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                    OSQEn   0x000411       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                   OSQMax   0x000413       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSQSize   0x000415       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSRdyTblSize   0x000417       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSSemEn   0x000419       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               OSStkWidth   0x00041b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTaskCreateEn   0x00041d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTaskCreateExtEn   0x00041f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSTaskDelEn   0x000421       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTaskIdleStkSize   0x000423       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+          OSTaskProfileEn   0x000425       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTaskMax   0x000427       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTaskNameEn   0x000429       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTaskStatEn   0x00042b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTaskStatStkSize   0x00042d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+       OSTaskStatStkChkEn   0x00042f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTaskSwHookEn   0x000431       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+         OSTaskRegTblSize   0x000433       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+          OSTCBPrioTblMax   0x000435       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTCBSize   0x000437       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+            OSTicksPerSec   0x000439       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+         OSTimeTickHookEn   0x00043b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSVersionNbr   0x00043d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                  OSTmrEn   0x00043f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+              OSTmrCfgMax   0x000441       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTmrCfgNameEn   0x000443       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTmrCfgWheelSize   0x000445       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+      OSTmrCfgTicksPerSec   0x000447       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                OSTmrSize   0x000449       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+             OSTmrTblSize   0x00044b       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+           OSTmrWheelSize   0x00044d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+        OSTmrWheelTblSize   0x00044f       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               OSDataSize   0x000451       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+                 TaskAStk   0x000453       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                 TaskBStk   0x0004cb       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                     prom   0x000543       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x000546       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x000548       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x00054a       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                globalVar   0x00054d       data     extern C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_816002553.c
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+
+

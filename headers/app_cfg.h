@@ -13,7 +13,7 @@ extern "C" {
 #endif
     
 #include <p18cxxx.h>
-#define TASK_STK_SIZE 512
+#define TASK_STK_SIZE 120
 
 #ifdef	__cplusplus
 }
