@@ -1,4 +1,4 @@
-#include "pic18f4520.h"
+#include <p18cxxx.h>        // Register definitions
 #include "xlcd.h"
 
 /*********************************************************************

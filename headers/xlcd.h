@@ -1,6 +1,6 @@
 #ifndef __XLCD_H
 #define __XLCD_H
-#include "pic18f4520.h"
+#include <p18cxxx.h>        // Register definitions
 /* PIC18 XLCD peripheral routines.
  *
  *   Notes:

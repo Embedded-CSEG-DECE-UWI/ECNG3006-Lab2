@@ -5,39 +5,39 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="headers" displayName="headers" projectFiles="true">
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/app_cfg.h</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/includes.h</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cfg.h</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cpu.h</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/ucos_ii.h</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/xlcd.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/app_cfg.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/includes.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cfg.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cpu.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/ucos_ii.h</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/xlcd.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
-      <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/uc-18f452i.lkr</itemPath>
+      <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/uc-18f452i.lkr</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="source" displayName="source" projectFiles="true">
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_816002553.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/os_cpu_c.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/ucos_ii.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/vectors.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_816002553.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/os_cpu_c.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/ucos_ii.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/vectors.c</itemPath>
       </logicalFolder>
       <logicalFolder name="XLCD" displayName="XLCD" projectFiles="true">
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/busyxlcd.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/openxlcd.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putrxlcd.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putsxlcd.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readaddr.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readdata.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setcgram.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setddram.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/wcmdxlcd.c</itemPath>
-        <itemPath>C:/Users/816002553/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/writdata.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/busyxlcd.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/openxlcd.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putrxlcd.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putsxlcd.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readaddr.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readdata.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setcgram.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setddram.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/wcmdxlcd.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/writdata.c</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -108,7 +108,7 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD"/>
+                  value="C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source"/>
         <property key="optimization-master" value="Disable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>

@@ -2,7 +2,7 @@
 // Student ID No.: 816002553
 // Date: 03/10/18
 ///////////////////////////////////////////////////////////////////
-#include <p18f452.h>
+#include <p18cxxx.h>        // Register definitions
 #include "includes.h"
 #include <delays.h>
 #include <timers.h>
@@ -58,12 +58,13 @@ int globalVar = 0; //Global Variable for TaskA & TaskB
 void TaskA(void *pdata)
 {
 
-	TRISBbits.RB0 = 0; //Configure PORTB pin 1 as an output
+	TRISBbits.RB0 = 0;                       //Configure PORTB pin 1 as an output
 	while (globalVar != 1)
 	{
-		//Code for printing string 
-		PORTBbits.RB0 = !PORTBbits.RB0;      //toggle PORTB pin 1
-		OSTimeDlyHMSM(0, 0, 1, 0);              //Delay for 1 sec
+                                             //Code for printing string 
+                                             //* Within the loop -- print string "Task 1 rocks! \n" to LCD top row
+        PORTBbits.RB0 = !PORTBbits.RB0;      //toggle PORTB pin 1
+		OSTimeDlyHMSM(0, 0, 1, 0);           //Delay for 1 sec
 	}
 	OSTaskDel(OS_PRIO_SELF);
 }
