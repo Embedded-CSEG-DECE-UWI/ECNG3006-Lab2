@@ -4,9 +4,13 @@
 ///////////////////////////////////////////////////////////////////
 #include <p18cxxx.h>        // Register definitions
 #include "includes.h"
+#include "os_cpu.h"
+#include "ucos_ii.h"
+//#include "ucos_ii.h"
 #include <delays.h>
 #include <timers.h>
 #include <xlcd.h>
+#include <p18f452.h>
 /* Write the appropriate code to set configuration bits:
 * - set HS oscillator
 * - disable watchdog timer
@@ -70,7 +74,6 @@ void TaskA(void *pdata)
 {
     
    TRISBbits.RB0 = 0;                       //Configure PORTB pin 1 as an output
-   configXLCD();                            //Configure XLCD 
    
    while (globalVar != 1)
 	{
@@ -98,7 +101,6 @@ void TaskB(void *pdata)
 {
  
 	TRISBbits.RB1 = 0;                      //Configure PORTB RB1 as an output
-    configXLCD();                           //Configure XLCD
     
 	while (globalVar != 1)
 	{
@@ -106,7 +108,7 @@ void TaskB(void *pdata)
         //* TaskB will loop until the global variable stopped is set.
         //* Within the loop -- print string "Task 2 rules?\n" to LCD bottom row
         
-        SetDDRamAddr(0x54);                 //Sets the LCD cursor to the last row first position               
+        SetDDRamAddr(0x10);                 //Sets the LCD cursor to the last row first position               
         while (BusyXLCD()){};
         putrsXLCD("Task 2 rules?\n");       //String message
         while (BusyXLCD()){};
@@ -117,19 +119,35 @@ void TaskB(void *pdata)
 }
 void main(void)
 {
-	// Write the appropriate code to disable all interrupts
-	// Write the appropriate code to initialise uC/OS II kernel
-	/* Write the appropriate code to enable timer0 ,
-	* using 16 bit mode on internal clk source and pre-scalar of 1.
-	*/
-	/* Write the appropriate code to set timer0 registers
-	* such that timer0 expires at 10ms using 4 Mhz oscillator.
-	* Do the same in vectors.c in CPUlowInterruptHook( ).
-	*/
-	/* Write the appropriate code to define the priorities for taskA
-	* and taskB in app_cfg.h. Use these defines to assign priorities
-	* when creating taskA and taskB with OSTaskCreate( )
-	*/
-	// Initialise the LCD display
-	// Write the appropriate code to start uC/OS II kernel
+    
+    OS_CPU_SR cpu_sr;                         // Controls the bits in the status register of the PIC
+            
+	OS_ENTER_CRITICAL();                     // Write the appropriate code to disable all interrupts //
+    //INTCONbits.GIE = 0;
+	OSInit();                                // Write the appropriate code to initialise uC/OS II kernel
+	OpenTimer0(TIMER_INT_ON &
+            T0_16BIT & 
+            T0_SOURCE_INT & 
+            T0_PS_1_1
+            );                            
+                                            /* Write the appropriate code to enable timer0 ,
+                                             * using 16 bit mode on internal clk source and pre-scalar of 1.
+                                          */
+            
+                                          /* Write the appropriate code to set timer0 registers
+                                            * such that timer0 expires at 10ms using 4 Mhz oscillator.
+                                            * Do the same in vectors.c in CPUlowInterruptHook( ).
+                                            */
+    T0CONbits.TMR0ON = 0;                  //Turn off timer0
+    WriteTimer0(55535);                    //TMR0_Reg = (2^16 - 1) - ((0.010)-(4000000))/(4*1)
+    T0CONbits.TMR0ON=  1;                  //Turn on timer0
+    
+                                        /* Write the appropriate code to define the priorities for taskA
+                                        * and taskB in app_cfg.h. Use these defines to assign priorities
+                                        * when creating taskA and taskB with OSTaskCreate( )
+                                        */
+    OSTaskCreate(TaskA, (void *)0, &TaskAStk[TASK_STK_SIZE-1], OS_TASKA_PRIO);
+    OSTaskCreate(TaskB, (void *)0, &TaskBStk[TASK_STK_SIZE-1], OS_TASKB_PRIO);
+	configXLCD();                        // Initialise the LCD display
+	OSStart();                           // Write the appropriate code to start uC/OS II kernel
 }

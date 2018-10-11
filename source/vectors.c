@@ -37,8 +37,12 @@ void CPUlowInterruptHook(void)
 {
     if(INTCONbits.TMR0IF) {                     // check for TMR0 overflow
         INTCONbits.TMR0IF = 0;                  // clear interrupt flag
-        TMR0H = 0xD8;                           // set the timer to expire in 10 ms. (at 4MHz)
-        TMR0L = 0xA0;
+       // TMR0H = 0xD8;                           // set the timer to expire in 10 ms. (at 4MHz)
+        //TMR0L = 0xA0;
+         T0CONbits.TMR0ON = 0;                  //Turn off timer0
+        WriteTimer0(55535);                    //TMR0_Reg = (2^16 - 1) - ((0.010)-(4000000))/(4*1)
+        T0CONbits.TMR0ON=  1;                  //Turn on timer0
+        
         OSTimeTick();                           // Call required os timer
     }
 
