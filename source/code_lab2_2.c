@@ -60,7 +60,9 @@ OS_STK TaskBStk[TASK_STK_SIZE];
 * TaskA will delete itself if the loop is exited.
 */
 
-int globalVar = 0; //Global Variable for TaskA & TaskB
+int stopped = 0;       //Global Variable for TaskA & TaskB
+OS_EVENT *LCD_SEMAPHORE; //OS EVENT pointer that will be point to the address of a semaphore
+INT8U err = 0;           //Variable that will be passed in the semaphore creation function to specify a binary semaphore
 
 void configXLCD()
 {
@@ -71,21 +73,28 @@ void configXLCD()
 
 void TaskA(void *pdata)
 {
-    
    TRISBbits.RB0 = 0;                       //Configure PORTB pin 1 as an output
+   PORTBbits.RB0 = 0;
    
-   while (globalVar != 1)
-	{
+   while (stopped)
+	{        
+       OSSemPend(LCD_SEMAPHORE,0,&err);         //Waits on semaphore: LCD_SEMAPHORE to become available
                                              //Code for printing string 
+ 
         SetDDRamAddr(0x00);                  //* Within the loop -- print string "Task 1 rocks! \n" to LCD top row
         while (BusyXLCD()){};
         putrsXLCD("Task 1 rocks!");
         while (BusyXLCD()){};
-        
+
        //Set the cursor to the first cell in the top row
         PORTBbits.RB0 = !PORTBbits.RB0;      //toggle PORTB pin 1
-		OSTimeDlyHMSM(0, 0, 1, 0);           //Delay for 1 sec
+        OSSemPost(LCD_SEMAPHORE);
+		OSTimeDlyHMSM(0, 0, 1, 0);           //Delay for 1 sec  
+        WriteCmdXLCD(0b00000001);
+        while(BusyXLCD());
 	}
+   
+  
 	OSTaskDel(OS_PRIO_SELF);
 }
 /* Write the appropriate code to do the following:
@@ -98,11 +107,14 @@ void TaskA(void *pdata)
 */
 void TaskB(void *pdata)
 {
- 
 	TRISBbits.RB1 = 0;                      //Configure PORTB RB1 as an output
+    PORTBbits.RB1 = 0;
+   // OSSemPend(LCD_SEMAPHORE,0,&err);     //Waits on semaphore: LCD_SEMAPHORE to become available
     
-	while (globalVar != 1)
+	while (stopped)
 	{
+
+        OSSemPend(LCD_SEMAPHORE,0,&err);         //Waits on semaphore: LCD_SEMAPHORE to become available
         //Code for printing the next string 
         //* TaskB will loop until the global variable stopped is set.
         //* Within the loop -- print string "Task 2 rules?\n" to LCD bottom row
@@ -113,8 +125,14 @@ void TaskB(void *pdata)
         while (BusyXLCD()){};
 		
 		PORTBbits.RB1 = !PORTBbits.RB1;     //Toggle PORTB pin 2
+        OSSemPost(LCD_SEMAPHORE);
 		OSTimeDly(200);                     //Delay of 200 ticks
+        WriteCmdXLCD(0b00000001);
+        while(BusyXLCD());   
 	}
+   
+    
+    OSTaskDel(OS_PRIO_SELF);
 }
 void main(void)
 {
@@ -145,8 +163,9 @@ void main(void)
                                         * and taskB in app_cfg.h. Use these defines to assign priorities
                                         * when creating taskA and taskB with OSTaskCreate( )
                                         */
-    OSTaskCreate(TaskA, (void *)0, &TaskAStk[TASK_STK_SIZE-1], OS_TASKA_PRIO);
-    OSTaskCreate(TaskB, (void *)0, &TaskBStk[TASK_STK_SIZE-1], OS_TASKB_PRIO);
-	configXLCD();                        // Initialise the LCD display
+    OSTaskCreate(TaskA, (void *)0, &TaskAStk[TASK_STK_SIZE], OS_TASKA_PRIO);  //Create a new task called Task A with the a priority of 0
+    OSTaskCreate(TaskB, (void *)0, &TaskBStk[TASK_STK_SIZE], OS_TASKB_PRIO);  //Create a new task called Task A with the a priority of 1
+	LCD_SEMAPHORE = OSSemCreate(1);      // Creates a Binary Semaphore
+    configXLCD();                        // Initialise the LCD display
 	OSStart();                           // Write the appropriate code to start uC/OS II kernel
 }

@@ -22,7 +22,7 @@
 *********************************************************************************************************
 */
 
-#ifndef OS_CFG_H 
+#ifndef OS_CFG_H
 #define OS_CFG_H
 
 
@@ -52,7 +52,7 @@
 
 
                                        /* --------------------- TASK STACK SIZE ---------------------- */
-#define OS_TASK_TMR_STK_SIZE    128u   /* Timer      task stack size (# of OS_STK wide entries)        */
+#define OS_TASK_TMR_STK_SIZE    128u   /* 100 Timer      task stack size (# of OS_STK wide entries)        */
 #define OS_TASK_STAT_STK_SIZE   128u   /* Statistics task stack size (# of OS_STK wide entries)        */
 #define OS_TASK_IDLE_STK_SIZE   128u   /* Idle       task stack size (# of OS_STK wide entries)        */
 
@@ -134,7 +134,7 @@
 
 
                                        /* --------------------- TIMER MANAGEMENT --------------------- */
-#define OS_TMR_EN                 0u   /* Enable (1) or Disable (0) code generation for TIMERS         */  /*This was changes*/
+#define OS_TMR_EN                 0u   /* Enable (1) or Disable (0) code generation for TIMERS         */
 #define OS_TMR_CFG_MAX           16u   /*     Maximum number of timers                                 */
 #define OS_TMR_CFG_NAME_EN        1u   /*     Determine timer names                                    */
 #define OS_TMR_CFG_WHEEL_SIZE     8u   /*     Size of timer wheel (#Spokes)                            */

@@ -85,6 +85,7 @@ void TaskA(void *pdata)
         
        //Set the cursor to the first cell in the top row
         PORTBbits.RB0 = !PORTBbits.RB0;      //toggle PORTB pin 1
+        
 		OSTimeDlyHMSM(0, 0, 1, 0);           //Delay for 1 sec
 	}
 	OSTaskDel(OS_PRIO_SELF);
