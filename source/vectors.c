@@ -35,10 +35,12 @@
 */
 void CPUlowInterruptHook(void)
 {
+   // INTCONbits.GIE = 0;
     if(INTCONbits.TMR0IF) {                     // check for TMR0 overflow
         INTCONbits.TMR0IF = 0;                  // clear interrupt flag
        // TMR0H = 0xD8;                           // set the timer to expire in 10 ms. (at 4MHz)
         //TMR0L = 0xA0;
+            
          T0CONbits.TMR0ON = 0;                  //Turn off timer0
         WriteTimer0(55535);                    //TMR0_Reg = (2^16 - 1) - ((0.010)-(4000000))/(4*1)
         T0CONbits.TMR0ON=  1;                  //Turn on timer0
@@ -47,13 +49,14 @@ void CPUlowInterruptHook(void)
     }
 
     /* Insert other interrupt items here */
-
+    appISR();                               //Call ISR in CPUlowInterruptHook
+    //INTCONbits.GIE = 1;
 }
 
 #pragma interrupt CPUhighInterruptHook
 void CPUhighInterruptHook(void)
 {
-    /* Insert high priority interrupt items here 
+   /* Insert high priority interrupt items here 
      * Do not make any OS function calls. */
 
 }

@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Tue Oct 16 10:51:59 2018
+Linker Map File - Created Tue Oct 16 12:51:13 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -10,73 +10,79 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                    .cinit    romdata   0x00002a    program   0x00001a
           .code_ucos_ii.o       code   0x000044    program   0x004a0a
          .code_os_cpu_c.o       code   0x004a4e    program   0x000566
-      .code_code_lab2_2.o       code   0x004fb4    program   0x0002d2
-         .code_openxlcd.o       code   0x005286    program   0x0000ec
-               _cinit_scn       code   0x005372    program   0x00009e
-         .code_putrxlcd.o       code   0x005410    program   0x000076
-          .code_fxm3232.o       code   0x005486    program   0x000070
-         .code_setddram.o       code   0x0054f6    program   0x00005e
-         .code_setcgram.o       code   0x005554    program   0x00005e
-         .code_writdata.o       code   0x0055b2    program   0x00005c
-         .code_wcmdxlcd.o       code   0x00560e    program   0x00005c
-         .code_putsxlcd.o       code   0x00566a    program   0x00005a
-         .code_readdata.o       code   0x0056c4    program   0x000052
-         .code_readaddr.o       code   0x005716    program   0x000052
-         .code_fxd3232u.o       code   0x005768    program   0x000048
-         .code_busyxlcd.o       code   0x0057b0    program   0x00003e
-          .code_t0write.o       code   0x0057ee    program   0x000038
-           .code_t0open.o       code   0x005826    program   0x000038
-             D10KTCYXCODE       code   0x00585e    program   0x00002e
-          .code_vectors.o       code   0x00588c    program   0x000026
-              D1KTCYXCODE       code   0x0058b2    program   0x000020
-                    .code       code   0x0058d2    program   0x000020
-             .stringtable    romdata   0x0058f2    program   0x00001f
-      .romdata_writdata.o    romdata   0x005911    program   0x000000
-      .idata_writdata.o_i    romdata   0x005911    program   0x000000
-      .romdata_wcmdxlcd.o    romdata   0x005911    program   0x000000
-      .idata_wcmdxlcd.o_i    romdata   0x005911    program   0x000000
-        .romdata___init.o    romdata   0x005911    program   0x000000
-   .romdata_code_lab2_2.o    romdata   0x005911    program   0x000000
-        .idata___init.o_i    romdata   0x005911    program   0x000000
-      .idata_fxd3232u.o_i    romdata   0x005911    program   0x000000
-       .romdata_t0write.o    romdata   0x005911    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x005911    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x005911    program   0x000000
-       .romdata_fxm3232.o    romdata   0x005911    program   0x000000
-       .idata_t0write.o_i    romdata   0x005911    program   0x000000
-        .idata_t0open.o_i    romdata   0x005911    program   0x000000
-        .romdata_t0open.o    romdata   0x005911    program   0x000000
-         .idata_c018i.o_i    romdata   0x005911    program   0x000000
-         .romdata_c018i.o    romdata   0x005911    program   0x000000
-      .idata_os_cpu_c.o_i    romdata   0x005911    program   0x000000
-      .romdata_os_cpu_c.o    romdata   0x005911    program   0x000000
-       .romdata_ucos_ii.o    romdata   0x005911    program   0x000000
-       .idata_vectors.o_i    romdata   0x005911    program   0x000000
-       .romdata_vectors.o    romdata   0x005911    program   0x000000
-      .idata_busyxlcd.o_i    romdata   0x005911    program   0x000000
-      .romdata_busyxlcd.o    romdata   0x005911    program   0x000000
-      .idata_openxlcd.o_i    romdata   0x005911    program   0x000000
-      .romdata_openxlcd.o    romdata   0x005911    program   0x000000
-      .idata_putrxlcd.o_i    romdata   0x005911    program   0x000000
-      .romdata_putrxlcd.o    romdata   0x005911    program   0x000000
-      .romdata_setddram.o    romdata   0x005911    program   0x000000
-      .idata_setddram.o_i    romdata   0x005911    program   0x000000
-      .romdata_setcgram.o    romdata   0x005911    program   0x000000
-      .idata_setcgram.o_i    romdata   0x005911    program   0x000000
-      .romdata_readdata.o    romdata   0x005911    program   0x000000
-      .idata_readdata.o_i    romdata   0x005911    program   0x000000
-      .romdata_readaddr.o    romdata   0x005911    program   0x000000
-      .idata_readaddr.o_i    romdata   0x005911    program   0x000000
-      .romdata_putsxlcd.o    romdata   0x005911    program   0x000000
-      .idata_putsxlcd.o_i    romdata   0x005911    program   0x000000
-             _startup_scn       code   0x005912    program   0x00001c
-            .code_c018i.o       code   0x005912    program   0x000000
-           .code___init.o       code   0x00592e    program   0x000002
-       .idata_ucos_ii.o_i    romdata   0x005930    program   0x000172
-   .idata_code_lab2_2.o_i    romdata   0x005aa2    program   0x000003
-.config_300001_code_lab2_2.o    romdata   0x300001    program   0x000001
-.config_300003_code_lab2_2.o    romdata   0x300003    program   0x000001
-.config_300006_code_lab2_2.o    romdata   0x300006    program   0x000001
+      .code_code_lab2_3.o       code   0x004fb4    program   0x000310
+         .code_openxlcd.o       code   0x0052c4    program   0x0000ec
+               _cinit_scn       code   0x0053b0    program   0x00009e
+         .code_putrxlcd.o       code   0x00544e    program   0x000076
+          .code_fxm3232.o       code   0x0054c4    program   0x000070
+         .code_setddram.o       code   0x005534    program   0x00005e
+         .code_setcgram.o       code   0x005592    program   0x00005e
+         .code_writdata.o       code   0x0055f0    program   0x00005c
+         .code_wcmdxlcd.o       code   0x00564c    program   0x00005c
+         .code_putsxlcd.o       code   0x0056a8    program   0x00005a
+         .code_readdata.o       code   0x005702    program   0x000052
+         .code_readaddr.o       code   0x005754    program   0x000052
+         .code_fxd3232u.o       code   0x0057a6    program   0x000048
+           .code_t1open.o       code   0x0057ee    program   0x000042
+         .code_busyxlcd.o       code   0x005830    program   0x00003e
+          .code_t1write.o       code   0x00586e    program   0x000038
+          .code_t0write.o       code   0x0058a6    program   0x000038
+           .code_t0open.o       code   0x0058de    program   0x000038
+             D10KTCYXCODE       code   0x005916    program   0x00002e
+          .code_vectors.o       code   0x005944    program   0x00002a
+              D1KTCYXCODE       code   0x00596e    program   0x000020
+                    .code       code   0x00598e    program   0x000020
+             .stringtable    romdata   0x0059ae    program   0x00001f
+       .idata_t1write.o_i    romdata   0x0059cd    program   0x000000
+       .romdata_t1write.o    romdata   0x0059cd    program   0x000000
+   .romdata_code_lab2_3.o    romdata   0x0059cd    program   0x000000
+        .idata___init.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_writdata.o    romdata   0x0059cd    program   0x000000
+        .romdata___init.o    romdata   0x0059cd    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x0059cd    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x0059cd    program   0x000000
+       .romdata_fxm3232.o    romdata   0x0059cd    program   0x000000
+       .romdata_t0write.o    romdata   0x0059cd    program   0x000000
+        .idata_t0open.o_i    romdata   0x0059cd    program   0x000000
+        .romdata_t0open.o    romdata   0x0059cd    program   0x000000
+        .idata_t1open.o_i    romdata   0x0059cd    program   0x000000
+        .romdata_t1open.o    romdata   0x0059cd    program   0x000000
+       .idata_t0write.o_i    romdata   0x0059cd    program   0x000000
+         .idata_c018i.o_i    romdata   0x0059cd    program   0x000000
+         .romdata_c018i.o    romdata   0x0059cd    program   0x000000
+      .idata_os_cpu_c.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_os_cpu_c.o    romdata   0x0059cd    program   0x000000
+       .romdata_ucos_ii.o    romdata   0x0059cd    program   0x000000
+       .idata_vectors.o_i    romdata   0x0059cd    program   0x000000
+       .romdata_vectors.o    romdata   0x0059cd    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x0059cd    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_openxlcd.o    romdata   0x0059cd    program   0x000000
+      .idata_putrxlcd.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x0059cd    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x0059cd    program   0x000000
+      .idata_writdata.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x0059cd    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_setddram.o    romdata   0x0059cd    program   0x000000
+      .idata_setddram.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_setcgram.o    romdata   0x0059cd    program   0x000000
+      .idata_setcgram.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_readdata.o    romdata   0x0059cd    program   0x000000
+      .idata_readdata.o_i    romdata   0x0059cd    program   0x000000
+      .romdata_readaddr.o    romdata   0x0059cd    program   0x000000
+      .idata_readaddr.o_i    romdata   0x0059cd    program   0x000000
+             _startup_scn       code   0x0059ce    program   0x00001c
+            .code_c018i.o       code   0x0059ce    program   0x000000
+           .code___init.o       code   0x0059ea    program   0x000002
+       .idata_ucos_ii.o_i    romdata   0x0059ec    program   0x000172
+   .idata_code_lab2_3.o_i    romdata   0x005b5e    program   0x000004
+.config_300001_code_lab2_3.o    romdata   0x300001    program   0x000001
+.config_300003_code_lab2_3.o    romdata   0x300003    program   0x000001
+.config_300006_code_lab2_3.o    romdata   0x300006    program   0x000001
                  .tmpdata      udata   0x000000       data   0x000014
                 MATH_DATA      udata   0x000014       data   0x000010
                 DELAYDAT2      udata   0x000024       data   0x000001
@@ -84,44 +90,48 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                    .stack      udata   0x000080       data   0x000030
          .udata_ucos_ii.o      udata   0x0000b0       data   0x00029d
          .idata_ucos_ii.o      idata   0x00034d       data   0x000172
-     .udata_code_lab2_2.o      udata   0x0004bf       data   0x0000f2
-           .udata_c018i.o      udata   0x0005b1       data   0x00000a
-     .idata_code_lab2_2.o      idata   0x0005bb       data   0x000003
-        .udata_wcmdxlcd.o      udata   0x0005be       data   0x000000
-        .idata_wcmdxlcd.o      idata   0x0005be       data   0x000000
-        .udata_writdata.o      udata   0x0005be       data   0x000000
-        .idata_writdata.o      idata   0x0005be       data   0x000000
-        .udata_os_cpu_c.o      udata   0x0005be       data   0x000000
-           .idata_c018i.o      idata   0x0005be       data   0x000000
-        .udata_fxd3232u.o      udata   0x0005be       data   0x000000
-        .idata_fxd3232u.o      idata   0x0005be       data   0x000000
-         .udata_fxm3232.o      udata   0x0005be       data   0x000000
-         .idata_fxm3232.o      idata   0x0005be       data   0x000000
-          .udata_t0open.o      udata   0x0005be       data   0x000000
-          .idata_t0open.o      idata   0x0005be       data   0x000000
-         .udata_t0write.o      udata   0x0005be       data   0x000000
-         .idata_t0write.o      idata   0x0005be       data   0x000000
-          .udata___init.o      udata   0x0005be       data   0x000000
-          .idata___init.o      idata   0x0005be       data   0x000000
-        .idata_os_cpu_c.o      idata   0x0005be       data   0x000000
-         .udata_vectors.o      udata   0x0005be       data   0x000000
-         .idata_vectors.o      idata   0x0005be       data   0x000000
-        .udata_busyxlcd.o      udata   0x0005be       data   0x000000
-        .idata_busyxlcd.o      idata   0x0005be       data   0x000000
-        .udata_openxlcd.o      udata   0x0005be       data   0x000000
-        .idata_openxlcd.o      idata   0x0005be       data   0x000000
-        .udata_putrxlcd.o      udata   0x0005be       data   0x000000
-        .idata_putrxlcd.o      idata   0x0005be       data   0x000000
-        .udata_putsxlcd.o      udata   0x0005be       data   0x000000
-        .idata_putsxlcd.o      idata   0x0005be       data   0x000000
-        .udata_readaddr.o      udata   0x0005be       data   0x000000
-        .idata_readaddr.o      idata   0x0005be       data   0x000000
-        .udata_readdata.o      udata   0x0005be       data   0x000000
-        .idata_readdata.o      idata   0x0005be       data   0x000000
-        .udata_setcgram.o      udata   0x0005be       data   0x000000
-        .idata_setcgram.o      idata   0x0005be       data   0x000000
-        .udata_setddram.o      udata   0x0005be       data   0x000000
-        .idata_setddram.o      idata   0x0005be       data   0x000000
+     .udata_code_lab2_3.o      udata   0x0004bf       data   0x0000f4
+           .udata_c018i.o      udata   0x0005b3       data   0x00000a
+     .idata_code_lab2_3.o      idata   0x0005bd       data   0x000004
+        .udata_writdata.o      udata   0x0005c1       data   0x000000
+        .idata_writdata.o      idata   0x0005c1       data   0x000000
+        .udata_os_cpu_c.o      udata   0x0005c1       data   0x000000
+           .idata_c018i.o      idata   0x0005c1       data   0x000000
+        .udata_fxd3232u.o      udata   0x0005c1       data   0x000000
+        .idata_fxd3232u.o      idata   0x0005c1       data   0x000000
+         .udata_fxm3232.o      udata   0x0005c1       data   0x000000
+         .idata_fxm3232.o      idata   0x0005c1       data   0x000000
+          .udata_t0open.o      udata   0x0005c1       data   0x000000
+          .idata_t0open.o      idata   0x0005c1       data   0x000000
+          .udata_t1open.o      udata   0x0005c1       data   0x000000
+          .idata_t1open.o      idata   0x0005c1       data   0x000000
+         .udata_t0write.o      udata   0x0005c1       data   0x000000
+         .idata_t0write.o      idata   0x0005c1       data   0x000000
+         .udata_t1write.o      udata   0x0005c1       data   0x000000
+         .idata_t1write.o      idata   0x0005c1       data   0x000000
+          .udata___init.o      udata   0x0005c1       data   0x000000
+          .idata___init.o      idata   0x0005c1       data   0x000000
+        .idata_os_cpu_c.o      idata   0x0005c1       data   0x000000
+         .udata_vectors.o      udata   0x0005c1       data   0x000000
+         .idata_vectors.o      idata   0x0005c1       data   0x000000
+        .udata_busyxlcd.o      udata   0x0005c1       data   0x000000
+        .idata_busyxlcd.o      idata   0x0005c1       data   0x000000
+        .udata_openxlcd.o      udata   0x0005c1       data   0x000000
+        .idata_openxlcd.o      idata   0x0005c1       data   0x000000
+        .udata_putrxlcd.o      udata   0x0005c1       data   0x000000
+        .idata_putrxlcd.o      idata   0x0005c1       data   0x000000
+        .udata_putsxlcd.o      udata   0x0005c1       data   0x000000
+        .idata_putsxlcd.o      idata   0x0005c1       data   0x000000
+        .udata_readaddr.o      udata   0x0005c1       data   0x000000
+        .idata_readaddr.o      idata   0x0005c1       data   0x000000
+        .udata_readdata.o      udata   0x0005c1       data   0x000000
+        .idata_readdata.o      idata   0x0005c1       data   0x000000
+        .udata_setcgram.o      udata   0x0005c1       data   0x000000
+        .idata_setcgram.o      idata   0x0005c1       data   0x000000
+        .udata_setddram.o      udata   0x0005c1       data   0x000000
+        .idata_setddram.o      idata   0x0005c1       data   0x000000
+        .udata_wcmdxlcd.o      udata   0x0005c1       data   0x000000
+        .idata_wcmdxlcd.o      idata   0x0005c1       data   0x000000
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
 
@@ -132,36 +142,36 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                             0x000000    0x000005      
                             0x000008    0x000013      
                             0x000018    0x00001d      
-                            0x00002a    0x005910      
-                            0x005912    0x005aa4      
+                            0x00002a    0x0059cc      
+                            0x0059ce    0x005b61      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300006    0x300006      
-            23189 out of 33048 program addresses used, program memory utilization is 70%
+            23378 out of 33048 program addresses used, program memory utilization is 70%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 BusyXLCD   0x0057b0    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\busyxlcd.c
-     CPUhighInterruptHook   0x0058ac    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+                 BusyXLCD   0x005830    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\busyxlcd.c
+     CPUhighInterruptHook   0x005968    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
             CPUhighVector   0x000008    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
           CPUlowInterrupt   0x004e5a    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
-      CPUlowInterruptHook   0x00588c    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+      CPUlowInterruptHook   0x005944    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
              CPUlowVector   0x000018    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
-                   D10K_1   0x00586a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x005876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x005868    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D1K_1   0x0058be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0058bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x00585e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay1KTCYx   0x0058b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            DelayFor18TCY   0x004fb4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-             DelayPORXLCD   0x004fda    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                DelayXLCD   0x004fe6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                 FXD3232U   0x005768    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                  FXM3232   0x005486    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                   D10K_1   0x005922    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00592e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x005920    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D1K_1   0x00597a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x005978    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x005916    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x00596e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x004fb4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+             DelayPORXLCD   0x004fda    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                DelayXLCD   0x004fe6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                 FXD3232U   0x0057a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                  FXM3232   0x0054c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
                   OSCtxSw   0x004d64    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
               OSDebugInit   0x0048ba    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
            OSEventNameGet   0x000044    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
@@ -240,21 +250,23 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
               OS_TaskIdle   0x001926    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
             OS_TaskReturn   0x00433c    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_task.c
               OS_TaskStat   0x001984    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_core.c
-               OpenTimer0   0x005826    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
-                 OpenXLCD   0x005286    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\openxlcd.c
-             ReadAddrXLCD   0x005716    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readaddr.c
-             ReadDataXLCD   0x0056c4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readdata.c
-             SetCGRamAddr   0x005554    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setcgram.c
-             SetDDRamAddr   0x0054f6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setddram.c
-                    TaskA   0x005012    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                    TaskB   0x0050ea    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-             WriteCmdXLCD   0x00560e    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\wcmdxlcd.c
-            WriteDataXLCD   0x0055b2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\writdata.c
-              WriteTimer0   0x0057ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-       _D10KTCYXCODE_0010   0x00586e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00587a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D1KTCYXCODE_0010   0x0058c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0058c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+               OpenTimer0   0x0058de    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+               OpenTimer1   0x0057ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+                 OpenXLCD   0x0052c4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\openxlcd.c
+             ReadAddrXLCD   0x005754    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readaddr.c
+             ReadDataXLCD   0x005702    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readdata.c
+             SetCGRamAddr   0x005592    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setcgram.c
+             SetDDRamAddr   0x005534    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setddram.c
+                    TaskA   0x005016    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                    TaskB   0x0050da    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+             WriteCmdXLCD   0x00564c    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\wcmdxlcd.c
+            WriteDataXLCD   0x0055f0    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\writdata.c
+              WriteTimer0   0x0058a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+              WriteTimer1   0x00586e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
+       _D10KTCYXCODE_0010   0x005926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x005932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D1KTCYXCODE_0010   0x00597e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x005984    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
            ___do_lbl00015   0x004d1c    program     static                          
            ___do_lbl00016   0x004d20    program     static                          
            ___do_lbl00017   0x004d0e    program     static                          
@@ -268,12 +280,12 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
            ___if_lbl00021   0x004dd0    program     static                          
            ___if_lbl00031   0x004f1a    program     static                          
            ___if_lbl00034   0x004f58    program     static                          
-       ___return_lbl00000   0x0054f4    program     static                          
-       ___return_lbl00000   0x004fd8    program     static                          
-       ___return_lbl00000   0x0057ae    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x00592c    program     static                          
-       ___return_lbl00002   0x00540e    program     static                          
+       ___return_lbl00000   0x004fd8    program     static                          
+       ___return_lbl00000   0x0057ec    program     static                          
+       ___return_lbl00000   0x005532    program     static                          
+       ___return_lbl00001   0x0059e8    program     static                          
+       ___return_lbl00002   0x00544c    program     static                          
        ___return_lbl00003   0x004c9c    program     static                          
        ___return_lbl00011   0x004d62    program     static                          
        ___return_lbl00018   0x004e58    program     static                          
@@ -289,33 +301,34 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
         ___while_lbl00030   0x004f10    program     static                          
         ___while_lbl00032   0x004f48    program     static                          
         ___while_lbl00033   0x004f52    program     static                          
-               __config_0   0x300001    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __config_1   0x300003    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __config_2   0x300006    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                   __init   0x00592e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __string_0   0x0058f2    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
-               __string_0   0x005903    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __string_1   0x0058f4    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-            __zero_memory   0x0058d2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                _do_cinit   0x005372    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               __config_0   0x300001    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __config_1   0x300003    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __config_2   0x300006    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                   __init   0x0059ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x0059ae    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               __string_0   0x0059bf    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __string_1   0x0059b0    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+            __zero_memory   0x00598e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x0053b0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x0057aa    program     static                          
-                 _startup   0x005912    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x0058e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               configXLCD   0x004ff2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                copy_loop   0x0053e4    program     static                          
-            copy_one_byte   0x0053ea    program     static                          
-                     done   0x00540e    program     static                          
-             done_copying   0x0053f8    program     static                          
-                     loop   0x005922    program     static                          
-                     loop   0x005776    program     static                          
-                   loop_h   0x0058e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x0058ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     main   0x0051b8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                putrsXLCD   0x005410    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putrxlcd.c
-                 putsXLCD   0x00566a    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putsxlcd.c
-                     test   0x00538c    program     static                          
-               zero_block   0x0058e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   _false   0x0057e8    program     static                          
+                 _startup   0x0059ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   appISR   0x0051aa    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                compare_l   0x0059a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               configXLCD   0x004ff2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                copy_loop   0x005422    program     static                          
+            copy_one_byte   0x005428    program     static                          
+                     done   0x00544c    program     static                          
+             done_copying   0x005436    program     static                          
+                     loop   0x0057b4    program     static                          
+                     loop   0x0059de    program     static                          
+                   loop_h   0x00599c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x0059a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     main   0x0051d8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                putrsXLCD   0x00544e    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putrxlcd.c
+                 putsXLCD   0x0056a8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putsxlcd.c
+                     test   0x0053ca    program     static                          
+               zero_block   0x00599c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -385,7 +398,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-            LCD_SEMAPHORE   0x0005af       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+           LCD_CSEMAPHORE   0x0005b1       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+            LCD_SEMAPHORE   0x0005af       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -569,8 +583,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 TaskAStk   0x0004bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                 TaskBStk   0x000537       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+                 TaskAStk   0x0004bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                 TaskBStk   0x000537       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                         W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -595,15 +609,16 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                   __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+                  __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                   __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
                   __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
-                curr_byte   0x0005b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0005b6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0005b8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                      err   0x0005bd       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                     prom   0x0005b1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                  stopped   0x0005bb       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+                curr_byte   0x0005b6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0005b8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0005ba       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                      err   0x0005bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                     err1   0x0005c0       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                     prom   0x0005b3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  stopped   0x0005bd       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
 
 
 
@@ -721,76 +736,79 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
            ___do_lbl00035   0x004f6c    program     static                          
            ___do_lbl00036   0x004f70    program     static                          
        ___return_lbl00028   0x004fb2    program     static                          
-            DelayFor18TCY   0x004fb4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+            DelayFor18TCY   0x004fb4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
        ___return_lbl00000   0x004fd8    program     static                          
-             DelayPORXLCD   0x004fda    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                DelayXLCD   0x004fe6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               configXLCD   0x004ff2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                    TaskA   0x005012    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                    TaskB   0x0050ea    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                     main   0x0051b8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                 OpenXLCD   0x005286    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\openxlcd.c
-                _do_cinit   0x005372    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x00538c    program     static                          
-                copy_loop   0x0053e4    program     static                          
-            copy_one_byte   0x0053ea    program     static                          
-             done_copying   0x0053f8    program     static                          
-       ___return_lbl00002   0x00540e    program     static                          
-                     done   0x00540e    program     static                          
-                putrsXLCD   0x005410    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putrxlcd.c
-                  FXM3232   0x005486    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x0054f4    program     static                          
-             SetDDRamAddr   0x0054f6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setddram.c
-             SetCGRamAddr   0x005554    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setcgram.c
-            WriteDataXLCD   0x0055b2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\writdata.c
-             WriteCmdXLCD   0x00560e    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\wcmdxlcd.c
-                 putsXLCD   0x00566a    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putsxlcd.c
-             ReadDataXLCD   0x0056c4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readdata.c
-             ReadAddrXLCD   0x005716    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readaddr.c
-                 FXD3232U   0x005768    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x005776    program     static                          
-                   _false   0x0057aa    program     static                          
-       ___return_lbl00000   0x0057ae    program     static                          
-                 BusyXLCD   0x0057b0    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\busyxlcd.c
-              WriteTimer0   0x0057ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
-               OpenTimer0   0x005826    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
-             Delay10KTCYx   0x00585e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x005868    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x00586a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00586e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x005876    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x00587a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-      CPUlowInterruptHook   0x00588c    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
-     CPUhighInterruptHook   0x0058ac    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
-              Delay1KTCYx   0x0058b2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0058bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x0058be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x0058c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0058c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x0058d2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_h   0x0058e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               zero_block   0x0058e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                compare_l   0x0058e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x0058ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               __string_0   0x0058f2    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
-               __string_1   0x0058f4    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __string_0   0x005903    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                 _startup   0x005912    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x005922    program     static                          
-       ___return_lbl00001   0x00592c    program     static                          
-                   __init   0x00592e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __config_0   0x300001    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __config_1   0x300003    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-               __config_2   0x300006    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+             DelayPORXLCD   0x004fda    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                DelayXLCD   0x004fe6    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               configXLCD   0x004ff2    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                    TaskA   0x005016    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                    TaskB   0x0050da    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                   appISR   0x0051aa    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                     main   0x0051d8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                 OpenXLCD   0x0052c4    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\openxlcd.c
+                _do_cinit   0x0053b0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0053ca    program     static                          
+                copy_loop   0x005422    program     static                          
+            copy_one_byte   0x005428    program     static                          
+             done_copying   0x005436    program     static                          
+       ___return_lbl00002   0x00544c    program     static                          
+                     done   0x00544c    program     static                          
+                putrsXLCD   0x00544e    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putrxlcd.c
+                  FXM3232   0x0054c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x005532    program     static                          
+             SetDDRamAddr   0x005534    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setddram.c
+             SetCGRamAddr   0x005592    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\setcgram.c
+            WriteDataXLCD   0x0055f0    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\writdata.c
+             WriteCmdXLCD   0x00564c    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\wcmdxlcd.c
+                 putsXLCD   0x0056a8    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\putsxlcd.c
+             ReadDataXLCD   0x005702    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readdata.c
+             ReadAddrXLCD   0x005754    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\readaddr.c
+                 FXD3232U   0x0057a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0057b4    program     static                          
+                   _false   0x0057e8    program     static                          
+       ___return_lbl00000   0x0057ec    program     static                          
+               OpenTimer1   0x0057ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+                 BusyXLCD   0x005830    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD\busyxlcd.c
+              WriteTimer1   0x00586e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1write.c
+              WriteTimer0   0x0058a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               OpenTimer0   0x0058de    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+             Delay10KTCYx   0x005916    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x005920    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x005922    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x005926    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00592e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x005932    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+      CPUlowInterruptHook   0x005944    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+     CPUhighInterruptHook   0x005968    program     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\vectors.c
+              Delay1KTCYx   0x00596e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x005978    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x00597a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x00597e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x005984    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x00598e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x00599c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x00599c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x0059a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x0059a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               __string_0   0x0059ae    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
+               __string_1   0x0059b0    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __string_0   0x0059bf    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                 _startup   0x0059ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0059de    program     static                          
+       ___return_lbl00001   0x0059e8    program     static                          
+                   __init   0x0059ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __config_1   0x300003    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+               __config_2   0x300006    program     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                   __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\os_cpu_c.c
                   __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
-                  __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
+                  __tmp_0   0x000000       data     static C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                  __AARGB7   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB3   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB6   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB5   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB4   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                   __REMB0   0x000017       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __AARGB3   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
@@ -893,76 +911,78 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
            OSTmrWheelSize   0x0004b9       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
         OSTmrWheelTblSize   0x0004bb       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
                OSDataSize   0x0004bd       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\os_dbg.c
-                 TaskAStk   0x0004bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                 TaskBStk   0x000537       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-            LCD_SEMAPHORE   0x0005af       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                     prom   0x0005b1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x0005b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0005b6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0005b8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                  stopped   0x0005bb       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                      err   0x0005bd       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_2.c
-                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 TaskAStk   0x0004bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                 TaskBStk   0x000537       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+            LCD_SEMAPHORE   0x0005af       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+           LCD_CSEMAPHORE   0x0005b1       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                     prom   0x0005b3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0005b6       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0005b8       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0005ba       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  stopped   0x0005bd       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                      err   0x0005bf       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
+                     err1   0x0005c0       data     extern C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source\code_lab2_3.c
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -972,8 +992,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -984,8 +1004,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
               SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -995,8 +1015,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
               SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                       PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -1011,8 +1031,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -1026,32 +1046,32 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                  POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                  POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
               INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                      PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -1060,8 +1080,8 @@ Linker Map File - Created Tue Oct 16 10:51:59 2018
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                        PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
