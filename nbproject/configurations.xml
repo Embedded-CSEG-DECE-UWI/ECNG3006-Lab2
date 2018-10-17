@@ -25,7 +25,7 @@
         <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/os_cpu_c.c</itemPath>
         <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/ucos_ii.c</itemPath>
         <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/vectors.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_3.c</itemPath>
+        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_4.c</itemPath>
       </logicalFolder>
       <logicalFolder name="XLCD" displayName="XLCD" projectFiles="true">
         <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/busyxlcd.c</itemPath>
@@ -147,7 +147,6 @@
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
