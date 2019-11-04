@@ -1,0 +1,6 @@
+Warning[2074] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 129 : location PRODH specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 129 : location PRODL specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 129 : location TABLAT specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 129 : location .tmpdata specified in the interrupt save list is redundant
+Warning[2066] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 52 : type qualifier mismatch in assignment
+Warning[2066] C:\ECNG3006\L02_815008434.X\code_lab2_3.c 53 : type qualifier mismatch in assignment

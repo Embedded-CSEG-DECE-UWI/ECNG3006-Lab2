@@ -1,0 +1,8 @@
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 181 : location PRODH specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 181 : location PRODL specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 181 : location TABLAT specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 181 : location .tmpdata specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 208 : location PRODH specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 208 : location PRODL specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 208 : location TABLAT specified in the interrupt save list is redundant
+Warning[2074] C:\ECNG3006\L02_815008434.X\serial.c 208 : location .tmpdata specified in the interrupt save list is redundant
