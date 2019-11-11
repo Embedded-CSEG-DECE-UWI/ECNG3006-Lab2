@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=F:/LO2_816003510/port.c F:/LO2_816003510/putrsxlcd.c F:/LO2_816003510/putsxlcd.c F:/LO2_816003510/queue.c F:/LO2_816003510/busyxlcd.c F:/LO2_816003510/code_lab2_FreeRTOS.c F:/LO2_816003510/croutine.c F:/LO2_816003510/event_groups.c F:/LO2_816003510/heap_1.c F:/LO2_816003510/list.c F:/LO2_816003510/openxlcd.c F:/LO2_816003510/readaddr.c F:/LO2_816003510/readdata.c F:/LO2_816003510/setcgram.c F:/LO2_816003510/setddram.c F:/LO2_816003510/stream_buffer.c F:/LO2_816003510/tasks.c F:/LO2_816003510/wcmdxlcd.c F:/LO2_816003510/writdata.c
+SOURCEFILES_QUOTED_IF_SPACED=F:/LO2_816003510/port.c F:/LO2_816003510/putrsxlcd.c F:/LO2_816003510/putsxlcd.c F:/LO2_816003510/queue.c F:/LO2_816003510/busyxlcd.c F:/LO2_816003510/code_lab2_FreeRTOS.c F:/LO2_816003510/croutine.c F:/LO2_816003510/event_groups.c F:/LO2_816003510/heap_1.c F:/LO2_816003510/list.c F:/LO2_816003510/openxlcd.c F:/LO2_816003510/readaddr.c F:/LO2_816003510/readdata.c F:/LO2_816003510/setcgram.c F:/LO2_816003510/setddram.c F:/LO2_816003510/stream_buffer.c F:/LO2_816003510/tasks.c F:/LO2_816003510/wcmdxlcd.c F:/LO2_816003510/writdata.c newfile.c newfile1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1029550747/port.o ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o ${OBJECTDIR}/_ext/1029550747/putsxlcd.o ${OBJECTDIR}/_ext/1029550747/queue.o ${OBJECTDIR}/_ext/1029550747/busyxlcd.o ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o ${OBJECTDIR}/_ext/1029550747/croutine.o ${OBJECTDIR}/_ext/1029550747/event_groups.o ${OBJECTDIR}/_ext/1029550747/heap_1.o ${OBJECTDIR}/_ext/1029550747/list.o ${OBJECTDIR}/_ext/1029550747/openxlcd.o ${OBJECTDIR}/_ext/1029550747/readaddr.o ${OBJECTDIR}/_ext/1029550747/readdata.o ${OBJECTDIR}/_ext/1029550747/setcgram.o ${OBJECTDIR}/_ext/1029550747/setddram.o ${OBJECTDIR}/_ext/1029550747/stream_buffer.o ${OBJECTDIR}/_ext/1029550747/tasks.o ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o ${OBJECTDIR}/_ext/1029550747/writdata.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1029550747/port.o.d ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o.d ${OBJECTDIR}/_ext/1029550747/putsxlcd.o.d ${OBJECTDIR}/_ext/1029550747/queue.o.d ${OBJECTDIR}/_ext/1029550747/busyxlcd.o.d ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o.d ${OBJECTDIR}/_ext/1029550747/croutine.o.d ${OBJECTDIR}/_ext/1029550747/event_groups.o.d ${OBJECTDIR}/_ext/1029550747/heap_1.o.d ${OBJECTDIR}/_ext/1029550747/list.o.d ${OBJECTDIR}/_ext/1029550747/openxlcd.o.d ${OBJECTDIR}/_ext/1029550747/readaddr.o.d ${OBJECTDIR}/_ext/1029550747/readdata.o.d ${OBJECTDIR}/_ext/1029550747/setcgram.o.d ${OBJECTDIR}/_ext/1029550747/setddram.o.d ${OBJECTDIR}/_ext/1029550747/stream_buffer.o.d ${OBJECTDIR}/_ext/1029550747/tasks.o.d ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o.d ${OBJECTDIR}/_ext/1029550747/writdata.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1029550747/port.o ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o ${OBJECTDIR}/_ext/1029550747/putsxlcd.o ${OBJECTDIR}/_ext/1029550747/queue.o ${OBJECTDIR}/_ext/1029550747/busyxlcd.o ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o ${OBJECTDIR}/_ext/1029550747/croutine.o ${OBJECTDIR}/_ext/1029550747/event_groups.o ${OBJECTDIR}/_ext/1029550747/heap_1.o ${OBJECTDIR}/_ext/1029550747/list.o ${OBJECTDIR}/_ext/1029550747/openxlcd.o ${OBJECTDIR}/_ext/1029550747/readaddr.o ${OBJECTDIR}/_ext/1029550747/readdata.o ${OBJECTDIR}/_ext/1029550747/setcgram.o ${OBJECTDIR}/_ext/1029550747/setddram.o ${OBJECTDIR}/_ext/1029550747/stream_buffer.o ${OBJECTDIR}/_ext/1029550747/tasks.o ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o ${OBJECTDIR}/_ext/1029550747/writdata.o ${OBJECTDIR}/newfile.o ${OBJECTDIR}/newfile1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1029550747/port.o.d ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o.d ${OBJECTDIR}/_ext/1029550747/putsxlcd.o.d ${OBJECTDIR}/_ext/1029550747/queue.o.d ${OBJECTDIR}/_ext/1029550747/busyxlcd.o.d ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o.d ${OBJECTDIR}/_ext/1029550747/croutine.o.d ${OBJECTDIR}/_ext/1029550747/event_groups.o.d ${OBJECTDIR}/_ext/1029550747/heap_1.o.d ${OBJECTDIR}/_ext/1029550747/list.o.d ${OBJECTDIR}/_ext/1029550747/openxlcd.o.d ${OBJECTDIR}/_ext/1029550747/readaddr.o.d ${OBJECTDIR}/_ext/1029550747/readdata.o.d ${OBJECTDIR}/_ext/1029550747/setcgram.o.d ${OBJECTDIR}/_ext/1029550747/setddram.o.d ${OBJECTDIR}/_ext/1029550747/stream_buffer.o.d ${OBJECTDIR}/_ext/1029550747/tasks.o.d ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o.d ${OBJECTDIR}/_ext/1029550747/writdata.o.d ${OBJECTDIR}/newfile.o.d ${OBJECTDIR}/newfile1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1029550747/port.o ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o ${OBJECTDIR}/_ext/1029550747/putsxlcd.o ${OBJECTDIR}/_ext/1029550747/queue.o ${OBJECTDIR}/_ext/1029550747/busyxlcd.o ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o ${OBJECTDIR}/_ext/1029550747/croutine.o ${OBJECTDIR}/_ext/1029550747/event_groups.o ${OBJECTDIR}/_ext/1029550747/heap_1.o ${OBJECTDIR}/_ext/1029550747/list.o ${OBJECTDIR}/_ext/1029550747/openxlcd.o ${OBJECTDIR}/_ext/1029550747/readaddr.o ${OBJECTDIR}/_ext/1029550747/readdata.o ${OBJECTDIR}/_ext/1029550747/setcgram.o ${OBJECTDIR}/_ext/1029550747/setddram.o ${OBJECTDIR}/_ext/1029550747/stream_buffer.o ${OBJECTDIR}/_ext/1029550747/tasks.o ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o ${OBJECTDIR}/_ext/1029550747/writdata.o
+OBJECTFILES=${OBJECTDIR}/_ext/1029550747/port.o ${OBJECTDIR}/_ext/1029550747/putrsxlcd.o ${OBJECTDIR}/_ext/1029550747/putsxlcd.o ${OBJECTDIR}/_ext/1029550747/queue.o ${OBJECTDIR}/_ext/1029550747/busyxlcd.o ${OBJECTDIR}/_ext/1029550747/code_lab2_FreeRTOS.o ${OBJECTDIR}/_ext/1029550747/croutine.o ${OBJECTDIR}/_ext/1029550747/event_groups.o ${OBJECTDIR}/_ext/1029550747/heap_1.o ${OBJECTDIR}/_ext/1029550747/list.o ${OBJECTDIR}/_ext/1029550747/openxlcd.o ${OBJECTDIR}/_ext/1029550747/readaddr.o ${OBJECTDIR}/_ext/1029550747/readdata.o ${OBJECTDIR}/_ext/1029550747/setcgram.o ${OBJECTDIR}/_ext/1029550747/setddram.o ${OBJECTDIR}/_ext/1029550747/stream_buffer.o ${OBJECTDIR}/_ext/1029550747/tasks.o ${OBJECTDIR}/_ext/1029550747/wcmdxlcd.o ${OBJECTDIR}/_ext/1029550747/writdata.o ${OBJECTDIR}/newfile.o ${OBJECTDIR}/newfile1.o
 
 # Source Files
-SOURCEFILES=F:/LO2_816003510/port.c F:/LO2_816003510/putrsxlcd.c F:/LO2_816003510/putsxlcd.c F:/LO2_816003510/queue.c F:/LO2_816003510/busyxlcd.c F:/LO2_816003510/code_lab2_FreeRTOS.c F:/LO2_816003510/croutine.c F:/LO2_816003510/event_groups.c F:/LO2_816003510/heap_1.c F:/LO2_816003510/list.c F:/LO2_816003510/openxlcd.c F:/LO2_816003510/readaddr.c F:/LO2_816003510/readdata.c F:/LO2_816003510/setcgram.c F:/LO2_816003510/setddram.c F:/LO2_816003510/stream_buffer.c F:/LO2_816003510/tasks.c F:/LO2_816003510/wcmdxlcd.c F:/LO2_816003510/writdata.c
+SOURCEFILES=F:/LO2_816003510/port.c F:/LO2_816003510/putrsxlcd.c F:/LO2_816003510/putsxlcd.c F:/LO2_816003510/queue.c F:/LO2_816003510/busyxlcd.c F:/LO2_816003510/code_lab2_FreeRTOS.c F:/LO2_816003510/croutine.c F:/LO2_816003510/event_groups.c F:/LO2_816003510/heap_1.c F:/LO2_816003510/list.c F:/LO2_816003510/openxlcd.c F:/LO2_816003510/readaddr.c F:/LO2_816003510/readdata.c F:/LO2_816003510/setcgram.c F:/LO2_816003510/setddram.c F:/LO2_816003510/stream_buffer.c F:/LO2_816003510/tasks.c F:/LO2_816003510/wcmdxlcd.c F:/LO2_816003510/writdata.c newfile.c newfile1.c
 
 
 CFLAGS=
@@ -253,6 +253,22 @@ ${OBJECTDIR}/_ext/1029550747/writdata.o: F:/LO2_816003510/writdata.c  nbproject/
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1029550747/writdata.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1029550747/writdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/newfile.o: newfile.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/newfile.o.d 
+	@${RM} ${OBJECTDIR}/newfile.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newfile.o   newfile.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/newfile.o 
+	@${FIXDEPS} "${OBJECTDIR}/newfile.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/newfile1.o: newfile1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/newfile1.o.d 
+	@${RM} ${OBJECTDIR}/newfile1.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newfile1.o   newfile1.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/newfile1.o 
+	@${FIXDEPS} "${OBJECTDIR}/newfile1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/_ext/1029550747/port.o: F:/LO2_816003510/port.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1029550747" 
@@ -405,6 +421,22 @@ ${OBJECTDIR}/_ext/1029550747/writdata.o: F:/LO2_816003510/writdata.c  nbproject/
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1029550747/writdata.o   F:/LO2_816003510/writdata.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1029550747/writdata.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1029550747/writdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/newfile.o: newfile.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/newfile.o.d 
+	@${RM} ${OBJECTDIR}/newfile.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newfile.o   newfile.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/newfile.o 
+	@${FIXDEPS} "${OBJECTDIR}/newfile.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/newfile1.o: newfile1.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/newfile1.o.d 
+	@${RM} ${OBJECTDIR}/newfile1.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/newfile1.o   newfile1.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/newfile1.o 
+	@${FIXDEPS} "${OBJECTDIR}/newfile1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 
