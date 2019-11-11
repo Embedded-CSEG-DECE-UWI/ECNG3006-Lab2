@@ -109,7 +109,7 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="C:\Y4S1\Micro P\Take 2\L02_814005504;C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Source\include;C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Source\portable\MPLAB\PIC18F;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
+                  value="C:\Users\Abigail\MPLABXProjects\3006_take2\ECNG3006-Lab2;C:\Program Files (x86)\Microchip\FreeRTOSv10.2.1\FreeRTOS\Source\include;C:\Program Files (x86)\Microchip\FreeRTOSv10.2.1\FreeRTOS\Source\portable\MPLAB\PIC18F;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
