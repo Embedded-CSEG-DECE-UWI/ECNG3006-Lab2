@@ -1,6 +1,14 @@
-#ifndef __XLCD_H
-#define __XLCD_H
-#include <p18cxxx.h>        // Register definitions
+/* 
+ * File:   xlcd_A.h
+ * Author: Abigail
+ *
+ * Created on September 17, 2018, 6:40 PM
+ */
+
+#ifndef XLCD_A_H
+#define	XLCD_A_H
+
+#include <p18f452.h>
 /* PIC18 XLCD peripheral routines.
  *
  *   Notes:
@@ -28,7 +36,7 @@
 /* When in 4-bit interface define if the data is in the upper
  * or lower nibble.  For lower nibble, comment the #define UPPER
  */
-#define UPPER
+ #define UPPER 
 
 /* DATA_PORT defines the port to which the LCD data lines are connected */
  #define DATA_PORT      		PORTD
@@ -130,4 +138,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-#endif
+
+
+#endif	/* XLCD_A_H */
+

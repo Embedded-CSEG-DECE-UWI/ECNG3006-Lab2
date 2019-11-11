@@ -1,5 +1,6 @@
-#include <p18cxxx.h>        // Register definitions
-#include "xlcd.h"
+#include <p18f452.h>
+#include<delays.h>
+#include "xlcd_A.h"
 
 /********************************************************************
 *       Function Name:  ReadDataXLCD                                *
