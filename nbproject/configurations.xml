@@ -4,41 +4,36 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="headers" displayName="headers" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/app_cfg.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/includes.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cfg.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cpu.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/ucos_ii.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/xlcd.h</itemPath>
-      </logicalFolder>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/FreeRTOSConfig.h</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/xlcd_A.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
-      <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/uc-18f452i.lkr</itemPath>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Demo/PIC18_MPLAB/18f452.lkr</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="source" displayName="source" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/os_cpu_c.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/ucos_ii.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/vectors.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_4.c</itemPath>
-      </logicalFolder>
-      <logicalFolder name="XLCD" displayName="XLCD" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/busyxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/openxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putrxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putsxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readaddr.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readdata.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setcgram.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setddram.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/wcmdxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/writdata.c</itemPath>
-      </logicalFolder>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Source/list.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Source/queue.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Source/tasks.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Source/portable/MPLAB/PIC18F/port.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/FreeRTOS/FreeRTOSv10.2.1/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/busyxlcd.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/openxlcd.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/putrxlcd.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/putsxlcd.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/readaddr.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/readdata.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/setcgram.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/setddram.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/wcmdxlcd.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/lcd_A/writdata.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/code_lab2_4.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/code_lab2_1.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/code_lab2_2.c</itemPath>
+      <itemPath>C:/Y4S1/Micro P/Take 2/L02_814005504/code_lab2_3.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -47,7 +42,12 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>.</Elem>
+    <Elem>C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Source</Elem>
+    <Elem>C:\Y4S1\Micro P\Take 2\L02_814005504</Elem>
+    <Elem>C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Demo\PIC18_MPLAB</Elem>
+    <Elem>C:\Y4S1\Micro P\Take 2\L01_814005504\ECNG3006-Lab1</Elem>
+    <Elem>C:\ECNG3006\L02_814005504</Elem>
+    <Elem>C:\Y4S1\Micro P\Take 2\lab01</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -63,7 +63,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.0.6"/>
+        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="0.1.3"/>
       </packs>
       <compileType>
         <linkerTool>
@@ -74,7 +74,7 @@
         </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
-          <parseOnProdLoad>false</parseOnProdLoad>
+          <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
         <subordinates>
@@ -93,7 +93,7 @@
         <property key="code-model" value="ml"/>
         <property key="data-model" value="oa-"/>
         <property key="default-char-unsigned" value="false"/>
-        <property key="enable-all-optimizations" value="false"/>
+        <property key="enable-all-optimizations" value="true"/>
         <property key="enable-int-promotion" value="false"/>
         <property key="enable-multi-bank-stack-model" value="true"/>
         <property key="enable-ob" value="true"/>
@@ -108,8 +108,8 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source"/>
-        <property key="optimization-master" value="Disable all"/>
+                  value="C:\Y4S1\Micro P\Take 2\L02_814005504;C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Source\include;C:\Y4S1\Micro P\FreeRTOS\FreeRTOSv10.2.1\FreeRTOS\Source\portable\MPLAB\PIC18F;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
+        <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
         <property key="storage-class" value="sca"/>
@@ -185,7 +185,6 @@
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>
         <property key="codecoverage.outputfile" value=""/>
-        <property key="codecoverage.report" value=""/>
         <property key="oscillator.auxfrequency" value="120"/>
         <property key="oscillator.auxfrequencyunit" value="Mega"/>
         <property key="oscillator.frequency" value="1"/>
@@ -193,7 +192,7 @@
         <property key="oscillator.rcfrequency" value="250"/>
         <property key="oscillator.rcfrequencyunit" value="Kilo"/>
         <property key="periphADC1.altscl" value="false"/>
-        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.minTacq" value="5"/>
         <property key="periphADC1.tacqunits" value="microseconds"/>
         <property key="periphADC2.altscl" value="false"/>
         <property key="periphADC2.minTacq" value=""/>
