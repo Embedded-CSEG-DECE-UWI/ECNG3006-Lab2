@@ -4,41 +4,40 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="headers" displayName="headers" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/app_cfg.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/includes.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cfg.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/os_cpu.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/ucos_ii.h</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/headers/xlcd.h</itemPath>
-      </logicalFolder>
+      <itemPath>../../FreeRTOSv10.2.1/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+      <itemPath>FreeRTOSConfig.h</itemPath>
+      <itemPath>xlcd.h</itemPath>
+      <itemPath>stdint.h</itemPath>
+      <itemPath>timers.h</itemPath>
+      <itemPath>../../FreeRTOSv10.2.1/FreeRTOS/Source/include/semphr.h</itemPath>
+      <itemPath>../../FreeRTOSv10.2.1/FreeRTOS/Source/include/queue.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
-      <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/uc-18f452i.lkr</itemPath>
+      <itemPath>18f452.lkr</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="source" displayName="source" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/os_cpu_c.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/ucos_ii.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/vectors.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/source/code_lab2_4.c</itemPath>
-      </logicalFolder>
-      <logicalFolder name="XLCD" displayName="XLCD" projectFiles="true">
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/busyxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/openxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putrxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/putsxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readaddr.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/readdata.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setcgram.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/setddram.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/wcmdxlcd.c</itemPath>
-        <itemPath>C:/Users/Danny G/Dropbox/Personal/School/ECNG/Year 3/ECNG - 3006/ECNG3006/L02_816002553/XLCD/writdata.c</itemPath>
-      </logicalFolder>
+      <itemPath>heap_1.c</itemPath>
+      <itemPath>list.c</itemPath>
+      <itemPath>port.c</itemPath>
+      <itemPath>queue.c</itemPath>
+      <itemPath>tasks.c</itemPath>
+      <itemPath>busyxlcd.c</itemPath>
+      <itemPath>openxlcd.c</itemPath>
+      <itemPath>putrxlcd.c</itemPath>
+      <itemPath>putsxlcd.c</itemPath>
+      <itemPath>readaddr.c</itemPath>
+      <itemPath>readdata.c</itemPath>
+      <itemPath>setcgram.c</itemPath>
+      <itemPath>setddram.c</itemPath>
+      <itemPath>wcmdxlcd.c</itemPath>
+      <itemPath>writdata.c</itemPath>
+      <itemPath>code_lab2_5.c</itemPath>
+      <itemPath>code_lab2_4.c</itemPath>
+      <itemPath>code_lab2_3.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -47,6 +46,8 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
+    <Elem>F:\ECNG3006\L02_816117563</Elem>
+    <Elem>../../FreeRTOSv10.2.1/FreeRTOS/Source/include</Elem>
     <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
@@ -108,7 +109,7 @@
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
         <property key="extra-include-directories"
-                  value="C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source;C:\Users\816002553\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\headers;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\XLCD;C:\Users\Danny G\Dropbox\Personal\School\ECNG\Year 3\ECNG - 3006\ECNG3006\L02_816002553\source"/>
+                  value="H:\ECNG3006\lab2.2\L02_816007689;..\..\FreeRTOSv10.2.1\FreeRTOS\Source\include;..\..\FreeRTOSv10.2.1\FreeRTOS\Source\portable\MPLAB\PIC18F;C:\Program Files (x86)\Microchip\mplabc18\v3.47\h"/>
         <property key="optimization-master" value="Disable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -193,7 +194,7 @@
         <property key="oscillator.rcfrequency" value="250"/>
         <property key="oscillator.rcfrequencyunit" value="Kilo"/>
         <property key="periphADC1.altscl" value="false"/>
-        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.minTacq" value="5"/>
         <property key="periphADC1.tacqunits" value="microseconds"/>
         <property key="periphADC2.altscl" value="false"/>
         <property key="periphADC2.minTacq" value=""/>
@@ -583,6 +584,36 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <item path="code_lab2_3.c" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+      <item path="code_lab2_4.c" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+      <item path="code_lab2_5.c" ex="false" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>
