@@ -117,7 +117,7 @@ static void TaskA(void *pdata) {
 
                                                                                                                                                                                                                                                                                                                                                  
 /* Write the appropriate code to do the following:
-* Configuee PORTB pin 2 as an output
+* Configure PORTB pin 2 as an output
 * TaskB will loop until the global variable stopped is set.
 * Within the loop -- print string "Task 2 rules?\n" to LCD bottom row
 *                 -- toggle PORTB pin 2

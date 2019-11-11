@@ -89,14 +89,12 @@ void TaskA(void * pdata)
   vTaskDelete(NULL); //TaskA will delete itself if the loop is exited.
 }
 
-/* Write the appropriate code to do the following:
-* Configure PORTB pin 1 as an output
-* TaskA will loop until the global variable stopped is set.
-* Within the loop -- print string "Task 1 rocks! \n" to LCD top row
-*                 -- toggle PORTB pin 1
-*                 -- delay for 1 second using vTaskDelay()
-* TaskA will delete itself if the loop is exited.
-*/
+/* Write the appropriate code to do the following: 
+ * Configure PORTB pin 2 as an output 
+ * TaskB will loop until the global variable stopped is set. 
+ * Within the loop -- print string "Task 2 rules?\n" to LCD bottom row 
+ * -- toggle PORTB pin 2 * -- delay of 200 ticks using OSTimeDly( ) 
+ * TaskB will delete itself if the loop is exited. */ 
 void TaskB(void * pdata) 
 {
 
