@@ -1,0 +1,1745 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Fri Nov 08 15:10:56 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+              high_vector       code   0x000008    program   0x00002a
+                   .cinit    romdata   0x00003a    program   0x000026
+            .code_tasks.o       code   0x000060    program   0x003744
+            .code_queue.o       code   0x0037a4    program   0x00203c
+             .code_port.o       code   0x0057e0    program   0x0009be
+             .code_list.o       code   0x00619e    program   0x000560
+      .code_code_lab2_5.o       code   0x0066fe    program   0x0003a2
+                   STDLIB       code   0x006aa0    program   0x000134
+           .code_heap_1.o       code   0x006bd4    program   0x00011e
+         .code_openxlcd.o       code   0x006cf2    program   0x0000ec
+               _cinit_scn       code   0x006dde    program   0x00009e
+         .code_putrxlcd.o       code   0x006e7c    program   0x000076
+         .code_setddram.o       code   0x006ef2    program   0x00005e
+         .code_setcgram.o       code   0x006f50    program   0x00005e
+         .code_writdata.o       code   0x006fae    program   0x00005c
+         .code_wcmdxlcd.o       code   0x00700a    program   0x00005c
+         .code_putsxlcd.o       code   0x007066    program   0x00005a
+                   STRING       code   0x0070c0    program   0x000056
+         .code_readdata.o       code   0x007116    program   0x000052
+         .code_readaddr.o       code   0x007168    program   0x000052
+           .code_t1open.o       code   0x0071ba    program   0x000042
+         .code_busyxlcd.o       code   0x0071fc    program   0x00003e
+          .code_t0write.o       code   0x00723a    program   0x000038
+           .code_t0open.o       code   0x007272    program   0x000038
+             D10KTCYXCODE       code   0x0072aa    program   0x00002e
+              D1KTCYXCODE       code   0x0072d8    program   0x000020
+                    .code       code   0x0072f8    program   0x000020
+             _startup_scn       code   0x007318    program   0x00001c
+              D10TCYXCODE       code   0x007334    program   0x000016
+             .stringtable    romdata   0x00734a    program   0x00000b
+        .idata_t0open.o_i    romdata   0x007355    program   0x000000
+   .romdata_code_lab2_5.o    romdata   0x007355    program   0x000000
+        .romdata_t0open.o    romdata   0x007355    program   0x000000
+        .idata_t1open.o_i    romdata   0x007355    program   0x000000
+      .romdata_writdata.o    romdata   0x007355    program   0x000000
+      .idata_writdata.o_i    romdata   0x007355    program   0x000000
+        .romdata_t1open.o    romdata   0x007355    program   0x000000
+       .idata_t0write.o_i    romdata   0x007355    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x007355    program   0x000000
+       .romdata_t0write.o    romdata   0x007355    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x007355    program   0x000000
+        .idata___init.o_i    romdata   0x007355    program   0x000000
+        .romdata___init.o    romdata   0x007355    program   0x000000
+      .romdata_setddram.o    romdata   0x007355    program   0x000000
+         .idata_c018i.o_i    romdata   0x007355    program   0x000000
+         .romdata_c018i.o    romdata   0x007355    program   0x000000
+        .romdata_heap_1.o    romdata   0x007355    program   0x000000
+          .idata_list.o_i    romdata   0x007355    program   0x000000
+          .romdata_list.o    romdata   0x007355    program   0x000000
+          .idata_port.o_i    romdata   0x007355    program   0x000000
+          .romdata_port.o    romdata   0x007355    program   0x000000
+         .idata_queue.o_i    romdata   0x007355    program   0x000000
+         .romdata_queue.o    romdata   0x007355    program   0x000000
+         .romdata_tasks.o    romdata   0x007355    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x007355    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x007355    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x007355    program   0x000000
+      .romdata_openxlcd.o    romdata   0x007355    program   0x000000
+      .idata_setddram.o_i    romdata   0x007355    program   0x000000
+      .romdata_setcgram.o    romdata   0x007355    program   0x000000
+      .idata_setcgram.o_i    romdata   0x007355    program   0x000000
+      .romdata_readdata.o    romdata   0x007355    program   0x000000
+      .idata_readdata.o_i    romdata   0x007355    program   0x000000
+      .romdata_readaddr.o    romdata   0x007355    program   0x000000
+      .idata_readaddr.o_i    romdata   0x007355    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x007355    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x007355    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x007355    program   0x000000
+      .idata_putrxlcd.o_i    romdata   0x007355    program   0x000000
+           .code___init.o       code   0x007356    program   0x000002
+            .code_c018i.o       code   0x007356    program   0x000000
+         .idata_tasks.o_i    romdata   0x007358    program   0x000015
+        .idata_heap_1.o_i    romdata   0x00736d    program   0x000004
+   .idata_code_lab2_5.o_i    romdata   0x007371    program   0x000004
+.config_300001_code_lab2_5.o    romdata   0x300001    program   0x000001
+.config_300003_code_lab2_5.o    romdata   0x300003    program   0x000001
+.config_300006_code_lab2_5.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x00000c
+                MATH_DATA      udata   0x00000c       data   0x00000b
+               appISR_tmp      udata   0x000017       data   0x000001
+                DELAYDAT2      udata   0x000018       data   0x000001
+                DELAYDAT1      udata   0x000019       data   0x000001
+                   .stack      udata   0x000080       data   0x000080
+          .udata_heap_1.o      udata   0x000100       data   0x000400
+           .udata_tasks.o      udata   0x000500       data   0x00005c
+           .udata_queue.o      udata   0x00055c       data   0x000028
+     .udata_code_lab2_5.o      udata   0x000584       data   0x000024
+           .idata_tasks.o      idata   0x0005a8       data   0x000015
+           .udata_c018i.o      udata   0x0005bd       data   0x00000a
+          .idata_heap_1.o      idata   0x0005c7       data   0x000004
+     .idata_code_lab2_5.o      idata   0x0005cb       data   0x000004
+        .idata_setddram.o      idata   0x0005cf       data   0x000000
+        .udata_wcmdxlcd.o      udata   0x0005cf       data   0x000000
+        .idata_wcmdxlcd.o      idata   0x0005cf       data   0x000000
+        .udata_writdata.o      udata   0x0005cf       data   0x000000
+        .idata_writdata.o      idata   0x0005cf       data   0x000000
+           .idata_c018i.o      idata   0x0005cf       data   0x000000
+          .udata_t0open.o      udata   0x0005cf       data   0x000000
+          .idata_t0open.o      idata   0x0005cf       data   0x000000
+          .udata_t1open.o      udata   0x0005cf       data   0x000000
+          .idata_t1open.o      idata   0x0005cf       data   0x000000
+         .udata_t0write.o      udata   0x0005cf       data   0x000000
+         .idata_t0write.o      idata   0x0005cf       data   0x000000
+          .udata___init.o      udata   0x0005cf       data   0x000000
+          .idata___init.o      idata   0x0005cf       data   0x000000
+            .udata_list.o      udata   0x0005cf       data   0x000000
+            .idata_list.o      idata   0x0005cf       data   0x000000
+            .udata_port.o      udata   0x0005cf       data   0x000000
+            .idata_port.o      idata   0x0005cf       data   0x000000
+           .idata_queue.o      idata   0x0005cf       data   0x000000
+        .udata_busyxlcd.o      udata   0x0005cf       data   0x000000
+        .idata_busyxlcd.o      idata   0x0005cf       data   0x000000
+        .udata_openxlcd.o      udata   0x0005cf       data   0x000000
+        .idata_openxlcd.o      idata   0x0005cf       data   0x000000
+        .udata_putrxlcd.o      udata   0x0005cf       data   0x000000
+        .idata_putrxlcd.o      idata   0x0005cf       data   0x000000
+        .udata_putsxlcd.o      udata   0x0005cf       data   0x000000
+        .idata_putsxlcd.o      idata   0x0005cf       data   0x000000
+        .udata_readaddr.o      udata   0x0005cf       data   0x000000
+        .idata_readaddr.o      idata   0x0005cf       data   0x000000
+        .udata_readdata.o      udata   0x0005cf       data   0x000000
+        .idata_readdata.o      idata   0x0005cf       data   0x000000
+        .udata_setcgram.o      udata   0x0005cf       data   0x000000
+        .idata_setcgram.o      idata   0x0005cf       data   0x000000
+        .udata_setddram.o      udata   0x0005cf       data   0x000000
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x000031      
+                            0x00003a    0x007354      
+                            0x007356    0x007374      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            29549 out of 33048 program addresses used, program memory utilization is 89%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 BusyXLCD   0x0071fc    program     extern H:\ECNG3006\lab2.2\L02_816007689\busyxlcd.c
+                   D10K_1   0x0072b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0072c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0072b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x007344    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00733c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x0072e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0072e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x0072aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x007334    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x0072d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x0066fe    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             DelayPORXLCD   0x00671a    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                DelayXLCD   0x006730    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  OneByte   0x006bc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+               OpenTimer0   0x007272    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+               OpenTimer1   0x0071ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+                 OpenXLCD   0x006cf2    program     extern H:\ECNG3006\lab2.2\L02_816007689\openxlcd.c
+                ProcLower   0x006b76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcUpper   0x006b6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+             ReadAddrXLCD   0x007168    program     extern H:\ECNG3006\lab2.2\L02_816007689\readaddr.c
+             ReadDataXLCD   0x007116    program     extern H:\ECNG3006\lab2.2\L02_816007689\readdata.c
+             SetCGRamAddr   0x006f50    program     extern H:\ECNG3006\lab2.2\L02_816007689\setcgram.c
+             SetDDRamAddr   0x006ef2    program     extern H:\ECNG3006\lab2.2\L02_816007689\setddram.c
+                    TaskA   0x006876    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                    TaskB   0x0068b2    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                 TstLower   0x006b60    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstUpper   0x006b5a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+             WriteCmdXLCD   0x00700a    program     extern H:\ECNG3006\lab2.2\L02_816007689\wcmdxlcd.c
+            WriteDataXLCD   0x006fae    program     extern H:\ECNG3006\lab2.2\L02_816007689\writdata.c
+              WriteTimer0   0x00723a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+              _4jContinue   0x0070f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x0070fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+       _D10KTCYXCODE_0010   0x0072ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0072c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x00733e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x007340    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x007342    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x0072e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0072ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+           ___?:_lbl00001   0x003902    program     static                          
+           ___?:_lbl00002   0x003900    program     static                          
+           ___?:_lbl00025   0x003ca4    program     static                          
+           ___?:_lbl00026   0x003ca2    program     static                          
+           ___?:_lbl00036   0x000706    program     static                          
+           ___?:_lbl00037   0x0006fa    program     static                          
+           ___?:_lbl00081   0x00428a    program     static                          
+           ___?:_lbl00082   0x004288    program     static                          
+           ___?:_lbl00083   0x000ce8    program     static                          
+           ___?:_lbl00084   0x000cdc    program     static                          
+           ___?:_lbl00092   0x000e10    program     static                          
+           ___?:_lbl00093   0x000e04    program     static                          
+           ___?:_lbl00104   0x000fa8    program     static                          
+           ___?:_lbl00105   0x000fa6    program     static                          
+           ___?:_lbl00111   0x004556    program     static                          
+           ___?:_lbl00112   0x004554    program     static                          
+           ___?:_lbl00116   0x0010d2    program     static                          
+           ___?:_lbl00117   0x0010c6    program     static                          
+           ___?:_lbl00141   0x004876    program     static                          
+           ___?:_lbl00142   0x004874    program     static                          
+           ___?:_lbl00174   0x0016e2    program     static                          
+           ___?:_lbl00175   0x0016e0    program     static                          
+           ___?:_lbl00210   0x005344    program     static                          
+           ___?:_lbl00211   0x005342    program     static                          
+           ___?:_lbl00219   0x0053fc    program     static                          
+           ___?:_lbl00220   0x0053fa    program     static                          
+           ___?:_lbl00355   0x003520    program     static                          
+           ___?:_lbl00356   0x003514    program     static                          
+       ___case_0_lbl00320   0x002f32    program     static                          
+       ___case_1_lbl00314   0x002e8a    program     static                          
+       ___case_2_lbl00315   0x002eb4    program     static                          
+       ___case_3_lbl00316   0x002ed0    program     static                          
+       ___case_4_lbl00319   0x002efa    program     static                          
+      ___default_lbl00321   0x002f34    program     static                          
+           ___do_lbl00180   0x00183a    program     static                          
+           ___do_lbl00181   0x001842    program     static                          
+           ___do_lbl00184   0x001828    program     static                          
+         ___else_lbl00004   0x003938    program     static                          
+         ___else_lbl00006   0x00393a    program     static                          
+         ___else_lbl00008   0x005d40    program     static                          
+         ___else_lbl00008   0x00393c    program     static                          
+         ___else_lbl00016   0x005efa    program     static                          
+         ___else_lbl00022   0x00059c    program     static                          
+         ___else_lbl00024   0x0005dc    program     static                          
+         ___else_lbl00026   0x0005de    program     static                          
+         ___else_lbl00028   0x003cde    program     static                          
+         ___else_lbl00028   0x00059e    program     static                          
+         ___else_lbl00030   0x003cec    program     static                          
+         ___else_lbl00031   0x0060b8    program     static                          
+         ___else_lbl00032   0x003ce0    program     static                          
+         ___else_lbl00032   0x0006b6    program     static                          
+         ___else_lbl00034   0x0006b8    program     static                          
+         ___else_lbl00036   0x003d44    program     static                          
+         ___else_lbl00038   0x003d26    program     static                          
+         ___else_lbl00039   0x00073c    program     static                          
+         ___else_lbl00040   0x003cf8    program     static                          
+         ___else_lbl00041   0x000784    program     static                          
+         ___else_lbl00043   0x0007d8    program     static                          
+         ___else_lbl00046   0x000818    program     static                          
+         ___else_lbl00047   0x003e70    program     static                          
+         ___else_lbl00049   0x003e8a    program     static                          
+         ___else_lbl00070   0x000c44    program     static                          
+         ___else_lbl00072   0x000c4a    program     static                          
+         ___else_lbl00075   0x000c80    program     static                          
+         ___else_lbl00077   0x000c50    program     static                          
+         ___else_lbl00079   0x000bec    program     static                          
+         ___else_lbl00081   0x000b62    program     static                          
+         ___else_lbl00084   0x0042c4    program     static                          
+         ___else_lbl00086   0x0042c6    program     static                          
+         ___else_lbl00090   0x00431e    program     static                          
+         ___else_lbl00091   0x000de2    program     static                          
+         ___else_lbl00092   0x004300    program     static                          
+         ___else_lbl00094   0x0042d2    program     static                          
+         ___else_lbl00095   0x000e8a    program     static                          
+         ___else_lbl00097   0x000e8c    program     static                          
+         ___else_lbl00099   0x000eb0    program     static                          
+         ___else_lbl00100   0x00444a    program     static                          
+         ___else_lbl00101   0x000e8e    program     static                          
+         ___else_lbl00102   0x00444c    program     static                          
+         ___else_lbl00103   0x000f60    program     static                          
+         ___else_lbl00104   0x00449c    program     static                          
+         ___else_lbl00106   0x004466    program     static                          
+         ___else_lbl00107   0x000fda    program     static                          
+         ___else_lbl00110   0x001066    program     static                          
+         ___else_lbl00112   0x001072    program     static                          
+         ___else_lbl00114   0x004590    program     static                          
+         ___else_lbl00116   0x004592    program     static                          
+         ___else_lbl00119   0x001108    program     static                          
+         ___else_lbl00120   0x0045ea    program     static                          
+         ___else_lbl00121   0x001150    program     static                          
+         ___else_lbl00122   0x0045cc    program     static                          
+         ___else_lbl00124   0x00459e    program     static                          
+         ___else_lbl00126   0x0011c8    program     static                          
+         ___else_lbl00128   0x0011fc    program     static                          
+         ___else_lbl00130   0x0011ea    program     static                          
+         ___else_lbl00130   0x004716    program     static                          
+         ___else_lbl00132   0x001202    program     static                          
+         ___else_lbl00132   0x004718    program     static                          
+         ___else_lbl00134   0x004768    program     static                          
+         ___else_lbl00136   0x004732    program     static                          
+         ___else_lbl00144   0x0048b0    program     static                          
+         ___else_lbl00146   0x0048b2    program     static                          
+         ___else_lbl00150   0x00143c    program     static                          
+         ___else_lbl00150   0x00490a    program     static                          
+         ___else_lbl00152   0x0048ec    program     static                          
+         ___else_lbl00152   0x00143e    program     static                          
+         ___else_lbl00154   0x0048be    program     static                          
+         ___else_lbl00155   0x001446    program     static                          
+         ___else_lbl00160   0x004a36    program     static                          
+         ___else_lbl00162   0x004a38    program     static                          
+         ___else_lbl00164   0x004a88    program     static                          
+         ___else_lbl00166   0x004a52    program     static                          
+         ___else_lbl00178   0x001806    program     static                          
+         ___else_lbl00183   0x001836    program     static                          
+         ___else_lbl00186   0x001848    program     static                          
+         ___else_lbl00188   0x00185e    program     static                          
+         ___else_lbl00191   0x001860    program     static                          
+         ___else_lbl00213   0x00537e    program     static                          
+         ___else_lbl00215   0x005380    program     static                          
+         ___else_lbl00222   0x005436    program     static                          
+         ___else_lbl00224   0x00543c    program     static                          
+         ___else_lbl00228   0x0054a2    program     static                          
+         ___else_lbl00235   0x005570    program     static                          
+         ___else_lbl00247   0x0024ec    program     static                          
+         ___else_lbl00249   0x00247c    program     static                          
+         ___else_lbl00251   0x00242a    program     static                          
+         ___else_lbl00292   0x002b10    program     static                          
+         ___else_lbl00294   0x002b12    program     static                          
+         ___else_lbl00297   0x002b86    program     static                          
+         ___else_lbl00299   0x002bce    program     static                          
+         ___else_lbl00303   0x002cea    program     static                          
+         ___else_lbl00305   0x002cec    program     static                          
+         ___else_lbl00309   0x002d5a    program     static                          
+         ___else_lbl00318   0x002f2c    program     static                          
+         ___else_lbl00324   0x00301a    program     static                          
+         ___else_lbl00326   0x00301c    program     static                          
+         ___else_lbl00358   0x003562    program     static                          
+          ___for_lbl00022   0x003ea6    program     static                          
+          ___for_lbl00023   0x003ea8    program     static                          
+          ___for_lbl00050   0x003c0c    program     static                          
+          ___for_lbl00079   0x00449c    program     static                          
+          ___for_lbl00080   0x00449e    program     static                          
+          ___for_lbl00107   0x004200    program     static                          
+          ___for_lbl00109   0x004768    program     static                          
+          ___for_lbl00110   0x00476a    program     static                          
+          ___for_lbl00137   0x0044f0    program     static                          
+          ___for_lbl00139   0x004a88    program     static                          
+          ___for_lbl00140   0x004a8a    program     static                          
+          ___for_lbl00167   0x0047bc    program     static                          
+           ___if_lbl00003   0x003938    program     static                          
+           ___if_lbl00005   0x00393a    program     static                          
+           ___if_lbl00007   0x00398c    program     static                          
+           ___if_lbl00007   0x005d4a    program     static                          
+           ___if_lbl00009   0x003992    program     static                          
+           ___if_lbl00015   0x005f04    program     static                          
+           ___if_lbl00018   0x000010    program     static                          
+           ___if_lbl00019   0x000018    program     static                          
+           ___if_lbl00020   0x000024    program     static                          
+           ___if_lbl00021   0x000024    program     static                          
+           ___if_lbl00021   0x00059c    program     static                          
+           ___if_lbl00022   0x000030    program     static                          
+           ___if_lbl00023   0x000030    program     static                          
+           ___if_lbl00023   0x0005dc    program     static                          
+           ___if_lbl00025   0x0005de    program     static                          
+           ___if_lbl00027   0x003cde    program     static                          
+           ___if_lbl00027   0x0005de    program     static                          
+           ___if_lbl00027   0x005fe8    program     static                          
+           ___if_lbl00029   0x00061c    program     static                          
+           ___if_lbl00029   0x003cec    program     static                          
+           ___if_lbl00030   0x000682    program     static                          
+           ___if_lbl00030   0x0060c2    program     static                          
+           ___if_lbl00031   0x003cec    program     static                          
+           ___if_lbl00031   0x0006b6    program     static                          
+           ___if_lbl00033   0x003cf2    program     static                          
+           ___if_lbl00033   0x0006b8    program     static                          
+           ___if_lbl00034   0x003d20    program     static                          
+           ___if_lbl00035   0x003d44    program     static                          
+           ___if_lbl00037   0x003d44    program     static                          
+           ___if_lbl00038   0x00073c    program     static                          
+           ___if_lbl00039   0x003d44    program     static                          
+           ___if_lbl00040   0x000784    program     static                          
+           ___if_lbl00041   0x003d4a    program     static                          
+           ___if_lbl00042   0x003d84    program     static                          
+           ___if_lbl00042   0x0007f0    program     static                          
+           ___if_lbl00043   0x003db4    program     static                          
+           ___if_lbl00044   0x0007f6    program     static                          
+           ___if_lbl00044   0x003dba    program     static                          
+           ___if_lbl00045   0x000818    program     static                          
+           ___if_lbl00045   0x003e6e    program     static                          
+           ___if_lbl00046   0x003e88    program     static                          
+           ___if_lbl00047   0x000818    program     static                          
+           ___if_lbl00048   0x003ea6    program     static                          
+           ___if_lbl00067   0x000bae    program     static                          
+           ___if_lbl00069   0x000c48    program     static                          
+           ___if_lbl00071   0x000c4e    program     static                          
+           ___if_lbl00074   0x000c84    program     static                          
+           ___if_lbl00076   0x000c84    program     static                          
+           ___if_lbl00078   0x000c84    program     static                          
+           ___if_lbl00080   0x000c84    program     static                          
+           ___if_lbl00083   0x0042c4    program     static                          
+           ___if_lbl00085   0x0042c6    program     static                          
+           ___if_lbl00085   0x000d0c    program     static                          
+           ___if_lbl00087   0x0042cc    program     static                          
+           ___if_lbl00088   0x0042fa    program     static                          
+           ___if_lbl00089   0x00431e    program     static                          
+           ___if_lbl00090   0x000de2    program     static                          
+           ___if_lbl00091   0x00431e    program     static                          
+           ___if_lbl00093   0x00431e    program     static                          
+           ___if_lbl00094   0x000e8a    program     static                          
+           ___if_lbl00095   0x004324    program     static                          
+           ___if_lbl00096   0x000e8c    program     static                          
+           ___if_lbl00096   0x00435e    program     static                          
+           ___if_lbl00097   0x00438e    program     static                          
+           ___if_lbl00098   0x004394    program     static                          
+           ___if_lbl00098   0x000eb0    program     static                          
+           ___if_lbl00099   0x00444a    program     static                          
+           ___if_lbl00100   0x000eb0    program     static                          
+           ___if_lbl00101   0x004464    program     static                          
+           ___if_lbl00102   0x000f60    program     static                          
+           ___if_lbl00103   0x00449c    program     static                          
+           ___if_lbl00105   0x00449c    program     static                          
+           ___if_lbl00106   0x000fda    program     static                          
+           ___if_lbl00108   0x00100c    program     static                          
+           ___if_lbl00109   0x001066    program     static                          
+           ___if_lbl00111   0x001072    program     static                          
+           ___if_lbl00113   0x001072    program     static                          
+           ___if_lbl00113   0x004590    program     static                          
+           ___if_lbl00114   0x001078    program     static                          
+           ___if_lbl00115   0x004592    program     static                          
+           ___if_lbl00117   0x004598    program     static                          
+           ___if_lbl00118   0x001108    program     static                          
+           ___if_lbl00118   0x0045c6    program     static                          
+           ___if_lbl00119   0x0045ea    program     static                          
+           ___if_lbl00120   0x001150    program     static                          
+           ___if_lbl00121   0x0045ea    program     static                          
+           ___if_lbl00122   0x0011aa    program     static                          
+           ___if_lbl00123   0x0011b0    program     static                          
+           ___if_lbl00123   0x0045ea    program     static                          
+           ___if_lbl00124   0x0011c6    program     static                          
+           ___if_lbl00125   0x0011c8    program     static                          
+           ___if_lbl00125   0x0045f0    program     static                          
+           ___if_lbl00126   0x00462a    program     static                          
+           ___if_lbl00127   0x001200    program     static                          
+           ___if_lbl00127   0x00465a    program     static                          
+           ___if_lbl00128   0x004660    program     static                          
+           ___if_lbl00129   0x001200    program     static                          
+           ___if_lbl00129   0x004716    program     static                          
+           ___if_lbl00131   0x004730    program     static                          
+           ___if_lbl00131   0x001202    program     static                          
+           ___if_lbl00133   0x004768    program     static                          
+           ___if_lbl00135   0x004768    program     static                          
+           ___if_lbl00143   0x0048b0    program     static                          
+           ___if_lbl00145   0x0048b2    program     static                          
+           ___if_lbl00147   0x0048b8    program     static                          
+           ___if_lbl00148   0x0048e6    program     static                          
+           ___if_lbl00148   0x0013ba    program     static                          
+           ___if_lbl00149   0x00490a    program     static                          
+           ___if_lbl00149   0x00143c    program     static                          
+           ___if_lbl00151   0x00490a    program     static                          
+           ___if_lbl00151   0x00143e    program     static                          
+           ___if_lbl00153   0x00490a    program     static                          
+           ___if_lbl00153   0x001444    program     static                          
+           ___if_lbl00154   0x001446    program     static                          
+           ___if_lbl00155   0x004910    program     static                          
+           ___if_lbl00156   0x00494a    program     static                          
+           ___if_lbl00157   0x00497a    program     static                          
+           ___if_lbl00158   0x004980    program     static                          
+           ___if_lbl00159   0x004a36    program     static                          
+           ___if_lbl00161   0x004a50    program     static                          
+           ___if_lbl00163   0x004a88    program     static                          
+           ___if_lbl00165   0x004a88    program     static                          
+           ___if_lbl00176   0x001782    program     static                          
+           ___if_lbl00177   0x001806    program     static                          
+           ___if_lbl00179   0x00181a    program     static                          
+           ___if_lbl00182   0x001836    program     static                          
+           ___if_lbl00185   0x001848    program     static                          
+           ___if_lbl00185   0x004d4c    program     static                          
+           ___if_lbl00187   0x004dca    program     static                          
+           ___if_lbl00187   0x00185e    program     static                          
+           ___if_lbl00189   0x00185e    program     static                          
+           ___if_lbl00190   0x001860    program     static                          
+           ___if_lbl00192   0x001866    program     static                          
+           ___if_lbl00194   0x0018c2    program     static                          
+           ___if_lbl00212   0x00537e    program     static                          
+           ___if_lbl00214   0x005382    program     static                          
+           ___if_lbl00216   0x0053a2    program     static                          
+           ___if_lbl00221   0x005436    program     static                          
+           ___if_lbl00223   0x00543e    program     static                          
+           ___if_lbl00225   0x00545c    program     static                          
+           ___if_lbl00227   0x0054a4    program     static                          
+           ___if_lbl00229   0x0054aa    program     static                          
+           ___if_lbl00234   0x005572    program     static                          
+           ___if_lbl00236   0x005578    program     static                          
+           ___if_lbl00242   0x00231c    program     static                          
+           ___if_lbl00246   0x002504    program     static                          
+           ___if_lbl00248   0x002504    program     static                          
+           ___if_lbl00250   0x002504    program     static                          
+           ___if_lbl00252   0x00250a    program     static                          
+           ___if_lbl00276   0x002810    program     static                          
+           ___if_lbl00291   0x002b10    program     static                          
+           ___if_lbl00293   0x002b12    program     static                          
+           ___if_lbl00295   0x002b18    program     static                          
+           ___if_lbl00296   0x002bcc    program     static                          
+           ___if_lbl00298   0x002bce    program     static                          
+           ___if_lbl00300   0x002be6    program     static                          
+           ___if_lbl00302   0x002cea    program     static                          
+           ___if_lbl00304   0x002cec    program     static                          
+           ___if_lbl00306   0x002cf2    program     static                          
+           ___if_lbl00307   0x002d46    program     static                          
+           ___if_lbl00308   0x002d9e    program     static                          
+           ___if_lbl00310   0x002db6    program     static                          
+           ___if_lbl00312   0x002e48    program     static                          
+           ___if_lbl00317   0x002f30    program     static                          
+           ___if_lbl00322   0x002f96    program     static                          
+           ___if_lbl00323   0x00301a    program     static                          
+           ___if_lbl00325   0x00301c    program     static                          
+           ___if_lbl00327   0x003022    program     static                          
+           ___if_lbl00357   0x003566    program     static                          
+           ___if_lbl00359   0x00356c    program     static                          
+       ___return_lbl00000   0x006718    program     static                          
+       ___return_lbl00000   0x003996    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x007332    program     static                          
+       ___return_lbl00002   0x006e7a    program     static                          
+       ___return_lbl00004   0x005d4e    program     static                          
+       ___return_lbl00010   0x005f04    program     static                          
+       ___return_lbl00017   0x000030    program     static                          
+       ___return_lbl00020   0x0006b8    program     static                          
+       ___return_lbl00021   0x003ea8    program     static                          
+       ___return_lbl00024   0x0060c2    program     static                          
+       ___return_lbl00026   0x006a9e    program     static                          
+       ___return_lbl00035   0x000818    program     static                          
+       ___return_lbl00066   0x000c88    program     static                          
+       ___return_lbl00078   0x00449e    program     static                          
+       ___return_lbl00082   0x000d12    program     static                          
+       ___return_lbl00089   0x001078    program     static                          
+       ___return_lbl00108   0x00476a    program     static                          
+       ___return_lbl00115   0x001202    program     static                          
+       ___return_lbl00138   0x004a8a    program     static                          
+       ___return_lbl00146   0x001446    program     static                          
+       ___return_lbl00171   0x00186c    program     static                          
+       ___return_lbl00184   0x004d50    program     static                          
+       ___return_lbl00186   0x004dce    program     static                          
+       ___return_lbl00193   0x0018d8    program     static                          
+       ___return_lbl00207   0x00545c    program     static                          
+       ___return_lbl00226   0x0054ae    program     static                          
+       ___return_lbl00233   0x00557c    program     static                          
+       ___return_lbl00241   0x00231c    program     static                          
+       ___return_lbl00244   0x00250e    program     static                          
+       ___return_lbl00273   0x002820    program     static                          
+       ___return_lbl00290   0x002bfc    program     static                          
+       ___return_lbl00301   0x002dba    program     static                          
+       ___return_lbl00311   0x003028    program     static                          
+       ___return_lbl00354   0x003572    program     static                          
+   ___switchexit_lbl00313   0x002f36    program     static                          
+        ___while_lbl00005   0x005c8a    program     static                          
+        ___while_lbl00006   0x005ca0    program     static                          
+        ___while_lbl00011   0x005dfa    program     static                          
+        ___while_lbl00012   0x005e10    program     static                          
+        ___while_lbl00013   0x005e44    program     static                          
+        ___while_lbl00014   0x005e5a    program     static                          
+        ___while_lbl00025   0x005fae    program     static                          
+        ___while_lbl00026   0x005fc4    program     static                          
+        ___while_lbl00028   0x006002    program     static                          
+        ___while_lbl00029   0x006018    program     static                          
+        ___while_lbl00172   0x0016d6    program     static                          
+        ___while_lbl00173   0x001808    program     static                          
+        ___while_lbl00208   0x00530c    program     static                          
+        ___while_lbl00209   0x005386    program     static                          
+        ___while_lbl00217   0x0053c2    program     static                          
+        ___while_lbl00218   0x005440    program     static                          
+        ___while_lbl00274   0x0027b4    program     static                          
+        ___while_lbl00275   0x002820    program     static                          
+               __config_0   0x300001    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               __config_1   0x300003    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               __config_2   0x300006    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   __init   0x007356    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __string_0   0x00734f    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               __string_0   0x00734a    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               __tmplbl_0   0x003c4c    program     static                          
+               __tmplbl_1   0x003c44    program     static                          
+              __tmplbl_10   0x000be6    program     static                          
+              __tmplbl_11   0x000bca    program     static                          
+              __tmplbl_12   0x000c7a    program     static                          
+              __tmplbl_13   0x000c68    program     static                          
+              __tmplbl_14   0x001348    program     static                          
+              __tmplbl_15   0x001338    program     static                          
+              __tmplbl_18   0x002424    program     static                          
+              __tmplbl_19   0x002476    program     static                          
+              __tmplbl_20   0x00243e    program     static                          
+              __tmplbl_21   0x002474    program     static                          
+              __tmplbl_22   0x0024b0    program     static                          
+              __tmplbl_23   0x002ad4    program     static                          
+              __tmplbl_24   0x002cae    program     static                          
+               __tmplbl_4   0x00531e    program     static                          
+               __tmplbl_5   0x0053d6    program     static                          
+            __zero_memory   0x0072f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x006dde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x007318    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   appISR   0x00673c    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                compare_l   0x00730e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x006e50    program     static                          
+            copy_one_byte   0x006e56    program     static                          
+                     done   0x006e7a    program     static                          
+             done_copying   0x006e64    program     static                          
+            eTaskGetState   0x000b10    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+                   itoBCD   0x006b80    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                     itoa   0x006aa0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo1   0x006b26    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo2   0x006b22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo3   0x006b1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo4   0x006b1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo5   0x006b16    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jEnd   0x006bbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                     jEnd   0x007104    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x0070e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x006b98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                jTstLowZ1   0x006b6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstSign1   0x006acc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                lcdconfig   0x006a14    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                     loop   0x007328    program     static                          
+                   loop_h   0x007306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x007310    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     main   0x006a20    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   memcpy   0x0070c0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+           pcQueueGetName   0x00569a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+            pcTaskGetName   0x00195a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+prvAddCurrentTaskToDelayedList   0x003584    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ prvAddNewTaskToReadyList   0x000562    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+prvCheckTasksWaitingTermination   0x0027a0    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     prvCopyDataFromQueue   0x005174    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+       prvCopyDataToQueue   0x004e8a    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+             prvDeleteTCB   0x002830    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              prvIdleTask   0x002532    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    prvInitialiseNewQueue   0x003abe    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+     prvInitialiseNewTask   0x0001b8    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   prvInitialiseTaskLists   0x0026ec    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          prvIsQueueEmpty   0x00546c    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           prvIsQueueFull   0x005520    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+          prvLowInterrupt   0x000008    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+prvResetNextTaskUnblockTime   0x002884    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   prvSetupTimerInterrupt   0x0060c4    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+   prvTaskIsTaskSuspended   0x001212    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               prvTickISR   0x005f06    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+           prvUnlockQueue   0x0052da    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+                putrsXLCD   0x006e7c    program     extern H:\ECNG3006\lab2.2\L02_816007689\putrxlcd.c
+                 putsXLCD   0x007066    program     extern H:\ECNG3006\lab2.2\L02_816007689\putsxlcd.c
+             pvPortMalloc   0x006bd4    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+pvTaskGetThreadLocalStoragePointer   0x002610    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    pxPortInitialiseStack   0x0057e0    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+                     test   0x006df8    program     static                          
+         ulTaskNotifyTake   0x002a5a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+             uxListRemove   0x0065b2    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+   uxQueueMessagesWaiting   0x004d16    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+uxQueueMessagesWaitingFromISR   0x004de0    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+   uxQueueSpacesAvailable   0x004d5e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+   uxTaskGetNumberOfTasks   0x001952    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        uxTaskPriorityGet   0x000ca4    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ uxTaskPriorityGetFromISR   0x000d24    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+uxTaskResetEventItemValue   0x002998    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          vListInitialise   0x00619e    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+      vListInitialiseItem   0x006296    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+              vListInsert   0x0063c6    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+           vListInsertEnd   0x0062c6    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+        vPortEndScheduler   0x005d50    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+                vPortFree   0x006cb0    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+    vPortInitialiseBlocks   0x006ccc    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+               vPortYield   0x005d52    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+      vQueueAddToRegistry   0x005608    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+             vQueueDelete   0x004e3c    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+    vQueueUnregisterQueue   0x005744    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+             vSerialRxISR   0x006a10    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             vSerialTxISR   0x006a12    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               vTaskDelay   0x000a86    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          vTaskDelayUntil   0x000828    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              vTaskDelete   0x0006c4    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        vTaskEndScheduler   0x001688    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskInternalSetTimeOutState   0x002328    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         vTaskMissedYield   0x00252a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   vTaskNotifyGiveFromISR   0x00331a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    vTaskPlaceOnEventList   0x001e54    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskPlaceOnUnorderedEventList   0x001edc    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         vTaskPrioritySet   0x000da8    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskRemoveFromUnorderedEventList   0x00215e    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              vTaskResume   0x001302    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskSetThreadLocalStoragePointer   0x002560    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     vTaskSetTimeOutState   0x0022d2    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+      vTaskStartScheduler   0x0015fc    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+             vTaskSuspend   0x001090    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          vTaskSuspendAll   0x001694    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       vTaskSwitchContext   0x001cf0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     xPortGetFreeHeapSize   0x006cd4    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+      xPortStartScheduler   0x005c6e    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+xQueueCreateCountingSemaphore   0x003b5e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+      xQueueGenericCreate   0x0039a6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+       xQueueGenericReset   0x0037a4    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueueGenericSend   0x003bd6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+ xQueueGenericSendFromISR   0x003ec4    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueueGiveFromISR   0x00404e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+xQueueIsQueueEmptyFromISR   0x0054bc    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+ xQueueIsQueueFullFromISR   0x00558a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+               xQueuePeek   0x004786    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueuePeekFromISR   0x004c2a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+            xQueueReceive   0x0041ca    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+     xQueueReceiveFromISR   0x004aa6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+      xQueueSemaphoreTake   0x0044ba    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+     xTaskCheckForTimeOut   0x002372    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              xTaskCreate   0x000060    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xTaskGenericNotify   0x002dc8    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+xTaskGenericNotifyFromISR   0x003044    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+xTaskGetCurrentTaskHandle   0x00291c    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   xTaskGetSchedulerState   0x00295a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xTaskGetTickCount   0x001888    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ xTaskGetTickCountFromISR   0x0018f0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xTaskIncrementTick   0x0019d0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    xTaskNotifyStateClear   0x0034e2    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          xTaskNotifyWait   0x002c14    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ xTaskRemoveFromEventList   0x001faa    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           xTaskResumeAll   0x00169a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xTaskResumeFromISR   0x001456    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               zero_block   0x007306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   Queue1   0x000584       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     SIGN   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+             Stimereceive   0x000586       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                Stimesend   0x0005cd       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  Sunread   0x00058a       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 __AARGB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                __FPFLAGS   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\list.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+                  __tmp_1   0x000017       data     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                curr_byte   0x0005c0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0005c2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0005c4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     prom   0x0005bd       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+           pucAlignedHeap   0x0005c9       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+             pxCurrentTCB   0x0005a8       data     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        pxDelayedTaskList   0x000537       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+pxOverflowDelayedTaskList   0x000539       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        pxReadyTasksLists   0x000500       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+                 spaceget   0x00059a       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  stopped   0x0005cb       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  timeget   0x00058c       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   ucHeap   0x000100       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                   unread   0x000588       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+   uxCurrentNumberOfTasks   0x0005ab       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+uxDeletedTasksWaitingCleanUp   0x0005aa       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            uxPendedTicks   0x0005b2       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     uxSchedulerSuspended   0x0005bc       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+             uxTaskNumber   0x0005b5       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       uxTopReadyPriority   0x0005b0       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xDelayedTaskList1   0x000521       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xDelayedTaskList2   0x00052c       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          xIdleTaskHandle   0x0005ba       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            xNextFreeByte   0x0005c7       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+     xNextTaskUnblockTime   0x0005b6       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          xNumOfOverflows   0x0005b4       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xPendingReadyList   0x00053b       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           xQueueRegistry   0x00055c       data     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xSchedulerRunning   0x0005b1       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xSuspendedTaskList   0x000551       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ xTasksWaitingTermination   0x000546       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               xTickCount   0x0005ac       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            xYieldPending   0x0005b3       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+          prvLowInterrupt   0x000008    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+           ___if_lbl00018   0x000010    program     static                          
+           ___if_lbl00019   0x000018    program     static                          
+           ___if_lbl00021   0x000024    program     static                          
+           ___if_lbl00020   0x000024    program     static                          
+       ___return_lbl00017   0x000030    program     static                          
+           ___if_lbl00023   0x000030    program     static                          
+           ___if_lbl00022   0x000030    program     static                          
+              xTaskCreate   0x000060    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     prvInitialiseNewTask   0x0001b8    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ prvAddNewTaskToReadyList   0x000562    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         ___else_lbl00022   0x00059c    program     static                          
+           ___if_lbl00021   0x00059c    program     static                          
+         ___else_lbl00028   0x00059e    program     static                          
+         ___else_lbl00024   0x0005dc    program     static                          
+           ___if_lbl00023   0x0005dc    program     static                          
+           ___if_lbl00025   0x0005de    program     static                          
+         ___else_lbl00026   0x0005de    program     static                          
+           ___if_lbl00027   0x0005de    program     static                          
+           ___if_lbl00029   0x00061c    program     static                          
+           ___if_lbl00030   0x000682    program     static                          
+           ___if_lbl00031   0x0006b6    program     static                          
+         ___else_lbl00032   0x0006b6    program     static                          
+       ___return_lbl00020   0x0006b8    program     static                          
+           ___if_lbl00033   0x0006b8    program     static                          
+         ___else_lbl00034   0x0006b8    program     static                          
+              vTaskDelete   0x0006c4    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___?:_lbl00037   0x0006fa    program     static                          
+           ___?:_lbl00036   0x000706    program     static                          
+         ___else_lbl00039   0x00073c    program     static                          
+           ___if_lbl00038   0x00073c    program     static                          
+         ___else_lbl00041   0x000784    program     static                          
+           ___if_lbl00040   0x000784    program     static                          
+         ___else_lbl00043   0x0007d8    program     static                          
+           ___if_lbl00042   0x0007f0    program     static                          
+           ___if_lbl00044   0x0007f6    program     static                          
+           ___if_lbl00047   0x000818    program     static                          
+           ___if_lbl00045   0x000818    program     static                          
+       ___return_lbl00035   0x000818    program     static                          
+         ___else_lbl00046   0x000818    program     static                          
+          vTaskDelayUntil   0x000828    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               vTaskDelay   0x000a86    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            eTaskGetState   0x000b10    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         ___else_lbl00081   0x000b62    program     static                          
+           ___if_lbl00067   0x000bae    program     static                          
+              __tmplbl_11   0x000bca    program     static                          
+              __tmplbl_10   0x000be6    program     static                          
+         ___else_lbl00079   0x000bec    program     static                          
+         ___else_lbl00070   0x000c44    program     static                          
+           ___if_lbl00069   0x000c48    program     static                          
+         ___else_lbl00072   0x000c4a    program     static                          
+           ___if_lbl00071   0x000c4e    program     static                          
+         ___else_lbl00077   0x000c50    program     static                          
+              __tmplbl_13   0x000c68    program     static                          
+              __tmplbl_12   0x000c7a    program     static                          
+         ___else_lbl00075   0x000c80    program     static                          
+           ___if_lbl00074   0x000c84    program     static                          
+           ___if_lbl00076   0x000c84    program     static                          
+           ___if_lbl00078   0x000c84    program     static                          
+           ___if_lbl00080   0x000c84    program     static                          
+       ___return_lbl00066   0x000c88    program     static                          
+        uxTaskPriorityGet   0x000ca4    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___?:_lbl00084   0x000cdc    program     static                          
+           ___?:_lbl00083   0x000ce8    program     static                          
+           ___if_lbl00085   0x000d0c    program     static                          
+       ___return_lbl00082   0x000d12    program     static                          
+ uxTaskPriorityGetFromISR   0x000d24    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         vTaskPrioritySet   0x000da8    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___if_lbl00090   0x000de2    program     static                          
+         ___else_lbl00091   0x000de2    program     static                          
+           ___?:_lbl00093   0x000e04    program     static                          
+           ___?:_lbl00092   0x000e10    program     static                          
+         ___else_lbl00095   0x000e8a    program     static                          
+           ___if_lbl00094   0x000e8a    program     static                          
+         ___else_lbl00097   0x000e8c    program     static                          
+           ___if_lbl00096   0x000e8c    program     static                          
+         ___else_lbl00101   0x000e8e    program     static                          
+         ___else_lbl00099   0x000eb0    program     static                          
+           ___if_lbl00100   0x000eb0    program     static                          
+           ___if_lbl00098   0x000eb0    program     static                          
+         ___else_lbl00103   0x000f60    program     static                          
+           ___if_lbl00102   0x000f60    program     static                          
+           ___?:_lbl00105   0x000fa6    program     static                          
+           ___?:_lbl00104   0x000fa8    program     static                          
+         ___else_lbl00107   0x000fda    program     static                          
+           ___if_lbl00106   0x000fda    program     static                          
+           ___if_lbl00108   0x00100c    program     static                          
+         ___else_lbl00110   0x001066    program     static                          
+           ___if_lbl00109   0x001066    program     static                          
+         ___else_lbl00112   0x001072    program     static                          
+           ___if_lbl00113   0x001072    program     static                          
+           ___if_lbl00111   0x001072    program     static                          
+       ___return_lbl00089   0x001078    program     static                          
+           ___if_lbl00114   0x001078    program     static                          
+             vTaskSuspend   0x001090    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___?:_lbl00117   0x0010c6    program     static                          
+           ___?:_lbl00116   0x0010d2    program     static                          
+         ___else_lbl00119   0x001108    program     static                          
+           ___if_lbl00118   0x001108    program     static                          
+           ___if_lbl00120   0x001150    program     static                          
+         ___else_lbl00121   0x001150    program     static                          
+           ___if_lbl00122   0x0011aa    program     static                          
+           ___if_lbl00123   0x0011b0    program     static                          
+           ___if_lbl00124   0x0011c6    program     static                          
+           ___if_lbl00125   0x0011c8    program     static                          
+         ___else_lbl00126   0x0011c8    program     static                          
+         ___else_lbl00130   0x0011ea    program     static                          
+         ___else_lbl00128   0x0011fc    program     static                          
+           ___if_lbl00127   0x001200    program     static                          
+           ___if_lbl00129   0x001200    program     static                          
+       ___return_lbl00115   0x001202    program     static                          
+         ___else_lbl00132   0x001202    program     static                          
+           ___if_lbl00131   0x001202    program     static                          
+   prvTaskIsTaskSuspended   0x001212    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              vTaskResume   0x001302    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              __tmplbl_15   0x001338    program     static                          
+              __tmplbl_14   0x001348    program     static                          
+           ___if_lbl00148   0x0013ba    program     static                          
+         ___else_lbl00150   0x00143c    program     static                          
+           ___if_lbl00149   0x00143c    program     static                          
+           ___if_lbl00151   0x00143e    program     static                          
+         ___else_lbl00152   0x00143e    program     static                          
+           ___if_lbl00153   0x001444    program     static                          
+           ___if_lbl00154   0x001446    program     static                          
+       ___return_lbl00146   0x001446    program     static                          
+         ___else_lbl00155   0x001446    program     static                          
+       xTaskResumeFromISR   0x001456    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+      vTaskStartScheduler   0x0015fc    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        vTaskEndScheduler   0x001688    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          vTaskSuspendAll   0x001694    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           xTaskResumeAll   0x00169a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        ___while_lbl00172   0x0016d6    program     static                          
+           ___?:_lbl00175   0x0016e0    program     static                          
+           ___?:_lbl00174   0x0016e2    program     static                          
+           ___if_lbl00176   0x001782    program     static                          
+           ___if_lbl00177   0x001806    program     static                          
+         ___else_lbl00178   0x001806    program     static                          
+        ___while_lbl00173   0x001808    program     static                          
+           ___if_lbl00179   0x00181a    program     static                          
+           ___do_lbl00184   0x001828    program     static                          
+         ___else_lbl00183   0x001836    program     static                          
+           ___if_lbl00182   0x001836    program     static                          
+           ___do_lbl00180   0x00183a    program     static                          
+           ___do_lbl00181   0x001842    program     static                          
+         ___else_lbl00186   0x001848    program     static                          
+           ___if_lbl00185   0x001848    program     static                          
+           ___if_lbl00187   0x00185e    program     static                          
+         ___else_lbl00188   0x00185e    program     static                          
+           ___if_lbl00189   0x00185e    program     static                          
+         ___else_lbl00191   0x001860    program     static                          
+           ___if_lbl00190   0x001860    program     static                          
+           ___if_lbl00192   0x001866    program     static                          
+       ___return_lbl00171   0x00186c    program     static                          
+        xTaskGetTickCount   0x001888    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___if_lbl00194   0x0018c2    program     static                          
+       ___return_lbl00193   0x0018d8    program     static                          
+ xTaskGetTickCountFromISR   0x0018f0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   uxTaskGetNumberOfTasks   0x001952    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            pcTaskGetName   0x00195a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xTaskIncrementTick   0x0019d0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       vTaskSwitchContext   0x001cf0    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    vTaskPlaceOnEventList   0x001e54    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskPlaceOnUnorderedEventList   0x001edc    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ xTaskRemoveFromEventList   0x001faa    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskRemoveFromUnorderedEventList   0x00215e    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     vTaskSetTimeOutState   0x0022d2    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       ___return_lbl00241   0x00231c    program     static                          
+           ___if_lbl00242   0x00231c    program     static                          
+vTaskInternalSetTimeOutState   0x002328    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     xTaskCheckForTimeOut   0x002372    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              __tmplbl_18   0x002424    program     static                          
+         ___else_lbl00251   0x00242a    program     static                          
+              __tmplbl_20   0x00243e    program     static                          
+              __tmplbl_21   0x002474    program     static                          
+              __tmplbl_19   0x002476    program     static                          
+         ___else_lbl00249   0x00247c    program     static                          
+              __tmplbl_22   0x0024b0    program     static                          
+         ___else_lbl00247   0x0024ec    program     static                          
+           ___if_lbl00248   0x002504    program     static                          
+           ___if_lbl00250   0x002504    program     static                          
+           ___if_lbl00246   0x002504    program     static                          
+           ___if_lbl00252   0x00250a    program     static                          
+       ___return_lbl00244   0x00250e    program     static                          
+         vTaskMissedYield   0x00252a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              prvIdleTask   0x002532    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+vTaskSetThreadLocalStoragePointer   0x002560    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+pvTaskGetThreadLocalStoragePointer   0x002610    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   prvInitialiseTaskLists   0x0026ec    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+prvCheckTasksWaitingTermination   0x0027a0    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        ___while_lbl00274   0x0027b4    program     static                          
+           ___if_lbl00276   0x002810    program     static                          
+       ___return_lbl00273   0x002820    program     static                          
+        ___while_lbl00275   0x002820    program     static                          
+             prvDeleteTCB   0x002830    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+prvResetNextTaskUnblockTime   0x002884    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+xTaskGetCurrentTaskHandle   0x00291c    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   xTaskGetSchedulerState   0x00295a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+uxTaskResetEventItemValue   0x002998    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+         ulTaskNotifyTake   0x002a5a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              __tmplbl_23   0x002ad4    program     static                          
+           ___if_lbl00291   0x002b10    program     static                          
+         ___else_lbl00292   0x002b10    program     static                          
+           ___if_lbl00293   0x002b12    program     static                          
+         ___else_lbl00294   0x002b12    program     static                          
+           ___if_lbl00295   0x002b18    program     static                          
+         ___else_lbl00297   0x002b86    program     static                          
+           ___if_lbl00296   0x002bcc    program     static                          
+           ___if_lbl00298   0x002bce    program     static                          
+         ___else_lbl00299   0x002bce    program     static                          
+           ___if_lbl00300   0x002be6    program     static                          
+       ___return_lbl00290   0x002bfc    program     static                          
+          xTaskNotifyWait   0x002c14    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+              __tmplbl_24   0x002cae    program     static                          
+         ___else_lbl00303   0x002cea    program     static                          
+           ___if_lbl00302   0x002cea    program     static                          
+         ___else_lbl00305   0x002cec    program     static                          
+           ___if_lbl00304   0x002cec    program     static                          
+           ___if_lbl00306   0x002cf2    program     static                          
+           ___if_lbl00307   0x002d46    program     static                          
+         ___else_lbl00309   0x002d5a    program     static                          
+           ___if_lbl00308   0x002d9e    program     static                          
+           ___if_lbl00310   0x002db6    program     static                          
+       ___return_lbl00301   0x002dba    program     static                          
+       xTaskGenericNotify   0x002dc8    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___if_lbl00312   0x002e48    program     static                          
+       ___case_1_lbl00314   0x002e8a    program     static                          
+       ___case_2_lbl00315   0x002eb4    program     static                          
+       ___case_3_lbl00316   0x002ed0    program     static                          
+       ___case_4_lbl00319   0x002efa    program     static                          
+         ___else_lbl00318   0x002f2c    program     static                          
+           ___if_lbl00317   0x002f30    program     static                          
+       ___case_0_lbl00320   0x002f32    program     static                          
+      ___default_lbl00321   0x002f34    program     static                          
+   ___switchexit_lbl00313   0x002f36    program     static                          
+           ___if_lbl00322   0x002f96    program     static                          
+           ___if_lbl00323   0x00301a    program     static                          
+         ___else_lbl00324   0x00301a    program     static                          
+         ___else_lbl00326   0x00301c    program     static                          
+           ___if_lbl00325   0x00301c    program     static                          
+           ___if_lbl00327   0x003022    program     static                          
+       ___return_lbl00311   0x003028    program     static                          
+xTaskGenericNotifyFromISR   0x003044    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   vTaskNotifyGiveFromISR   0x00331a    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+    xTaskNotifyStateClear   0x0034e2    program     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           ___?:_lbl00356   0x003514    program     static                          
+           ___?:_lbl00355   0x003520    program     static                          
+         ___else_lbl00358   0x003562    program     static                          
+           ___if_lbl00357   0x003566    program     static                          
+           ___if_lbl00359   0x00356c    program     static                          
+       ___return_lbl00354   0x003572    program     static                          
+prvAddCurrentTaskToDelayedList   0x003584    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xQueueGenericReset   0x0037a4    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           ___?:_lbl00002   0x003900    program     static                          
+           ___?:_lbl00001   0x003902    program     static                          
+           ___if_lbl00003   0x003938    program     static                          
+         ___else_lbl00004   0x003938    program     static                          
+         ___else_lbl00006   0x00393a    program     static                          
+           ___if_lbl00005   0x00393a    program     static                          
+         ___else_lbl00008   0x00393c    program     static                          
+           ___if_lbl00007   0x00398c    program     static                          
+           ___if_lbl00009   0x003992    program     static                          
+       ___return_lbl00000   0x003996    program     static                          
+      xQueueGenericCreate   0x0039a6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+    prvInitialiseNewQueue   0x003abe    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+xQueueCreateCountingSemaphore   0x003b5e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueueGenericSend   0x003bd6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+          ___for_lbl00050   0x003c0c    program     static                          
+               __tmplbl_1   0x003c44    program     static                          
+               __tmplbl_0   0x003c4c    program     static                          
+           ___?:_lbl00026   0x003ca2    program     static                          
+           ___?:_lbl00025   0x003ca4    program     static                          
+           ___if_lbl00027   0x003cde    program     static                          
+         ___else_lbl00028   0x003cde    program     static                          
+         ___else_lbl00032   0x003ce0    program     static                          
+           ___if_lbl00029   0x003cec    program     static                          
+         ___else_lbl00030   0x003cec    program     static                          
+           ___if_lbl00031   0x003cec    program     static                          
+           ___if_lbl00033   0x003cf2    program     static                          
+         ___else_lbl00040   0x003cf8    program     static                          
+           ___if_lbl00034   0x003d20    program     static                          
+         ___else_lbl00038   0x003d26    program     static                          
+         ___else_lbl00036   0x003d44    program     static                          
+           ___if_lbl00035   0x003d44    program     static                          
+           ___if_lbl00039   0x003d44    program     static                          
+           ___if_lbl00037   0x003d44    program     static                          
+           ___if_lbl00041   0x003d4a    program     static                          
+           ___if_lbl00042   0x003d84    program     static                          
+           ___if_lbl00043   0x003db4    program     static                          
+           ___if_lbl00044   0x003dba    program     static                          
+           ___if_lbl00045   0x003e6e    program     static                          
+         ___else_lbl00047   0x003e70    program     static                          
+           ___if_lbl00046   0x003e88    program     static                          
+         ___else_lbl00049   0x003e8a    program     static                          
+           ___if_lbl00048   0x003ea6    program     static                          
+          ___for_lbl00022   0x003ea6    program     static                          
+       ___return_lbl00021   0x003ea8    program     static                          
+          ___for_lbl00023   0x003ea8    program     static                          
+ xQueueGenericSendFromISR   0x003ec4    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueueGiveFromISR   0x00404e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+            xQueueReceive   0x0041ca    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+          ___for_lbl00107   0x004200    program     static                          
+           ___?:_lbl00082   0x004288    program     static                          
+           ___?:_lbl00081   0x00428a    program     static                          
+         ___else_lbl00084   0x0042c4    program     static                          
+           ___if_lbl00083   0x0042c4    program     static                          
+         ___else_lbl00086   0x0042c6    program     static                          
+           ___if_lbl00085   0x0042c6    program     static                          
+           ___if_lbl00087   0x0042cc    program     static                          
+         ___else_lbl00094   0x0042d2    program     static                          
+           ___if_lbl00088   0x0042fa    program     static                          
+         ___else_lbl00092   0x004300    program     static                          
+           ___if_lbl00089   0x00431e    program     static                          
+           ___if_lbl00091   0x00431e    program     static                          
+           ___if_lbl00093   0x00431e    program     static                          
+         ___else_lbl00090   0x00431e    program     static                          
+           ___if_lbl00095   0x004324    program     static                          
+           ___if_lbl00096   0x00435e    program     static                          
+           ___if_lbl00097   0x00438e    program     static                          
+           ___if_lbl00098   0x004394    program     static                          
+           ___if_lbl00099   0x00444a    program     static                          
+         ___else_lbl00100   0x00444a    program     static                          
+         ___else_lbl00102   0x00444c    program     static                          
+           ___if_lbl00101   0x004464    program     static                          
+         ___else_lbl00106   0x004466    program     static                          
+          ___for_lbl00079   0x00449c    program     static                          
+           ___if_lbl00103   0x00449c    program     static                          
+           ___if_lbl00105   0x00449c    program     static                          
+         ___else_lbl00104   0x00449c    program     static                          
+          ___for_lbl00080   0x00449e    program     static                          
+       ___return_lbl00078   0x00449e    program     static                          
+      xQueueSemaphoreTake   0x0044ba    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+          ___for_lbl00137   0x0044f0    program     static                          
+           ___?:_lbl00112   0x004554    program     static                          
+           ___?:_lbl00111   0x004556    program     static                          
+           ___if_lbl00113   0x004590    program     static                          
+         ___else_lbl00114   0x004590    program     static                          
+           ___if_lbl00115   0x004592    program     static                          
+         ___else_lbl00116   0x004592    program     static                          
+           ___if_lbl00117   0x004598    program     static                          
+         ___else_lbl00124   0x00459e    program     static                          
+           ___if_lbl00118   0x0045c6    program     static                          
+         ___else_lbl00122   0x0045cc    program     static                          
+         ___else_lbl00120   0x0045ea    program     static                          
+           ___if_lbl00119   0x0045ea    program     static                          
+           ___if_lbl00121   0x0045ea    program     static                          
+           ___if_lbl00123   0x0045ea    program     static                          
+           ___if_lbl00125   0x0045f0    program     static                          
+           ___if_lbl00126   0x00462a    program     static                          
+           ___if_lbl00127   0x00465a    program     static                          
+           ___if_lbl00128   0x004660    program     static                          
+         ___else_lbl00130   0x004716    program     static                          
+           ___if_lbl00129   0x004716    program     static                          
+         ___else_lbl00132   0x004718    program     static                          
+           ___if_lbl00131   0x004730    program     static                          
+         ___else_lbl00136   0x004732    program     static                          
+           ___if_lbl00133   0x004768    program     static                          
+           ___if_lbl00135   0x004768    program     static                          
+         ___else_lbl00134   0x004768    program     static                          
+          ___for_lbl00109   0x004768    program     static                          
+          ___for_lbl00110   0x00476a    program     static                          
+       ___return_lbl00108   0x00476a    program     static                          
+               xQueuePeek   0x004786    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+          ___for_lbl00167   0x0047bc    program     static                          
+           ___?:_lbl00142   0x004874    program     static                          
+           ___?:_lbl00141   0x004876    program     static                          
+         ___else_lbl00144   0x0048b0    program     static                          
+           ___if_lbl00143   0x0048b0    program     static                          
+         ___else_lbl00146   0x0048b2    program     static                          
+           ___if_lbl00145   0x0048b2    program     static                          
+           ___if_lbl00147   0x0048b8    program     static                          
+         ___else_lbl00154   0x0048be    program     static                          
+           ___if_lbl00148   0x0048e6    program     static                          
+         ___else_lbl00152   0x0048ec    program     static                          
+           ___if_lbl00151   0x00490a    program     static                          
+           ___if_lbl00153   0x00490a    program     static                          
+           ___if_lbl00149   0x00490a    program     static                          
+         ___else_lbl00150   0x00490a    program     static                          
+           ___if_lbl00155   0x004910    program     static                          
+           ___if_lbl00156   0x00494a    program     static                          
+           ___if_lbl00157   0x00497a    program     static                          
+           ___if_lbl00158   0x004980    program     static                          
+           ___if_lbl00159   0x004a36    program     static                          
+         ___else_lbl00160   0x004a36    program     static                          
+         ___else_lbl00162   0x004a38    program     static                          
+           ___if_lbl00161   0x004a50    program     static                          
+         ___else_lbl00166   0x004a52    program     static                          
+           ___if_lbl00165   0x004a88    program     static                          
+         ___else_lbl00164   0x004a88    program     static                          
+           ___if_lbl00163   0x004a88    program     static                          
+          ___for_lbl00139   0x004a88    program     static                          
+       ___return_lbl00138   0x004a8a    program     static                          
+          ___for_lbl00140   0x004a8a    program     static                          
+     xQueueReceiveFromISR   0x004aa6    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        xQueuePeekFromISR   0x004c2a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+   uxQueueMessagesWaiting   0x004d16    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           ___if_lbl00185   0x004d4c    program     static                          
+       ___return_lbl00184   0x004d50    program     static                          
+   uxQueueSpacesAvailable   0x004d5e    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           ___if_lbl00187   0x004dca    program     static                          
+       ___return_lbl00186   0x004dce    program     static                          
+uxQueueMessagesWaitingFromISR   0x004de0    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+             vQueueDelete   0x004e3c    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+       prvCopyDataToQueue   0x004e8a    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+     prvCopyDataFromQueue   0x005174    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           prvUnlockQueue   0x0052da    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+        ___while_lbl00208   0x00530c    program     static                          
+               __tmplbl_4   0x00531e    program     static                          
+           ___?:_lbl00211   0x005342    program     static                          
+           ___?:_lbl00210   0x005344    program     static                          
+         ___else_lbl00213   0x00537e    program     static                          
+           ___if_lbl00212   0x00537e    program     static                          
+         ___else_lbl00215   0x005380    program     static                          
+           ___if_lbl00214   0x005382    program     static                          
+        ___while_lbl00209   0x005386    program     static                          
+           ___if_lbl00216   0x0053a2    program     static                          
+        ___while_lbl00217   0x0053c2    program     static                          
+               __tmplbl_5   0x0053d6    program     static                          
+           ___?:_lbl00220   0x0053fa    program     static                          
+           ___?:_lbl00219   0x0053fc    program     static                          
+         ___else_lbl00222   0x005436    program     static                          
+           ___if_lbl00221   0x005436    program     static                          
+         ___else_lbl00224   0x00543c    program     static                          
+           ___if_lbl00223   0x00543e    program     static                          
+        ___while_lbl00218   0x005440    program     static                          
+           ___if_lbl00225   0x00545c    program     static                          
+       ___return_lbl00207   0x00545c    program     static                          
+          prvIsQueueEmpty   0x00546c    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+         ___else_lbl00228   0x0054a2    program     static                          
+           ___if_lbl00227   0x0054a4    program     static                          
+           ___if_lbl00229   0x0054aa    program     static                          
+       ___return_lbl00226   0x0054ae    program     static                          
+xQueueIsQueueEmptyFromISR   0x0054bc    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           prvIsQueueFull   0x005520    program     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+         ___else_lbl00235   0x005570    program     static                          
+           ___if_lbl00234   0x005572    program     static                          
+           ___if_lbl00236   0x005578    program     static                          
+       ___return_lbl00233   0x00557c    program     static                          
+ xQueueIsQueueFullFromISR   0x00558a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+      vQueueAddToRegistry   0x005608    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+           pcQueueGetName   0x00569a    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+    vQueueUnregisterQueue   0x005744    program     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+    pxPortInitialiseStack   0x0057e0    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+      xPortStartScheduler   0x005c6e    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+        ___while_lbl00005   0x005c8a    program     static                          
+        ___while_lbl00006   0x005ca0    program     static                          
+         ___else_lbl00008   0x005d40    program     static                          
+           ___if_lbl00007   0x005d4a    program     static                          
+       ___return_lbl00004   0x005d4e    program     static                          
+        vPortEndScheduler   0x005d50    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+               vPortYield   0x005d52    program     extern H:\ECNG3006\lab2.2\L02_816007689\port.c
+        ___while_lbl00011   0x005dfa    program     static                          
+        ___while_lbl00012   0x005e10    program     static                          
+        ___while_lbl00013   0x005e44    program     static                          
+        ___while_lbl00014   0x005e5a    program     static                          
+         ___else_lbl00016   0x005efa    program     static                          
+           ___if_lbl00015   0x005f04    program     static                          
+       ___return_lbl00010   0x005f04    program     static                          
+               prvTickISR   0x005f06    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+        ___while_lbl00025   0x005fae    program     static                          
+        ___while_lbl00026   0x005fc4    program     static                          
+           ___if_lbl00027   0x005fe8    program     static                          
+        ___while_lbl00028   0x006002    program     static                          
+        ___while_lbl00029   0x006018    program     static                          
+         ___else_lbl00031   0x0060b8    program     static                          
+           ___if_lbl00030   0x0060c2    program     static                          
+       ___return_lbl00024   0x0060c2    program     static                          
+   prvSetupTimerInterrupt   0x0060c4    program     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+          vListInitialise   0x00619e    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+      vListInitialiseItem   0x006296    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+           vListInsertEnd   0x0062c6    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+              vListInsert   0x0063c6    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+             uxListRemove   0x0065b2    program     extern H:\ECNG3006\lab2.2\L02_816007689\list.c
+            DelayFor18TCY   0x0066fe    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+       ___return_lbl00000   0x006718    program     static                          
+             DelayPORXLCD   0x00671a    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                DelayXLCD   0x006730    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   appISR   0x00673c    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                    TaskA   0x006876    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                    TaskB   0x0068b2    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             vSerialRxISR   0x006a10    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             vSerialTxISR   0x006a12    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                lcdconfig   0x006a14    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                     main   0x006a20    program     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+       ___return_lbl00026   0x006a9e    program     static                          
+                     itoa   0x006aa0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstSign1   0x006acc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo5   0x006b16    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo4   0x006b1a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo3   0x006b1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo2   0x006b22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo1   0x006b26    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstUpper   0x006b5a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstLower   0x006b60    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstLowZ1   0x006b6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcUpper   0x006b6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcLower   0x006b76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                   itoBCD   0x006b80    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                    jLoop   0x006b98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                     jEnd   0x006bbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                  OneByte   0x006bc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+             pvPortMalloc   0x006bd4    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                vPortFree   0x006cb0    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+    vPortInitialiseBlocks   0x006ccc    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+     xPortGetFreeHeapSize   0x006cd4    program     extern H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                 OpenXLCD   0x006cf2    program     extern H:\ECNG3006\lab2.2\L02_816007689\openxlcd.c
+                _do_cinit   0x006dde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x006df8    program     static                          
+                copy_loop   0x006e50    program     static                          
+            copy_one_byte   0x006e56    program     static                          
+             done_copying   0x006e64    program     static                          
+                     done   0x006e7a    program     static                          
+       ___return_lbl00002   0x006e7a    program     static                          
+                putrsXLCD   0x006e7c    program     extern H:\ECNG3006\lab2.2\L02_816007689\putrxlcd.c
+             SetDDRamAddr   0x006ef2    program     extern H:\ECNG3006\lab2.2\L02_816007689\setddram.c
+             SetCGRamAddr   0x006f50    program     extern H:\ECNG3006\lab2.2\L02_816007689\setcgram.c
+            WriteDataXLCD   0x006fae    program     extern H:\ECNG3006\lab2.2\L02_816007689\writdata.c
+             WriteCmdXLCD   0x00700a    program     extern H:\ECNG3006\lab2.2\L02_816007689\wcmdxlcd.c
+                 putsXLCD   0x007066    program     extern H:\ECNG3006\lab2.2\L02_816007689\putsxlcd.c
+                   memcpy   0x0070c0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x0070e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+              _4jContinue   0x0070f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x0070fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+                     jEnd   0x007104    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memcpy.asm
+             ReadDataXLCD   0x007116    program     extern H:\ECNG3006\lab2.2\L02_816007689\readdata.c
+             ReadAddrXLCD   0x007168    program     extern H:\ECNG3006\lab2.2\L02_816007689\readaddr.c
+               OpenTimer1   0x0071ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t1open.c
+                 BusyXLCD   0x0071fc    program     extern H:\ECNG3006\lab2.2\L02_816007689\busyxlcd.c
+              WriteTimer0   0x00723a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               OpenTimer0   0x007272    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+             Delay10KTCYx   0x0072aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0072b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x0072b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x0072ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0072c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0072c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x0072d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0072e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x0072e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x0072e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0072ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x0072f8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x007306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x007306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x00730e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x007310    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x007318    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x007328    program     static                          
+       ___return_lbl00001   0x007332    program     static                          
+              Delay10TCYx   0x007334    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x00733c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x00733e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x007340    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x007342    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x007344    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+               __string_0   0x00734a    program     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               __string_0   0x00734f    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   __init   0x007356    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               __config_1   0x300003    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+               __config_2   0x300006    program     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\queue.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\port.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\list.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+                  __tmp_0   0x000000       data     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                 __AARGB7   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000014       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                     SIGN   0x000015       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000016       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __tmp_1   0x000017       data     static H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                   ucHeap   0x000100       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+        pxReadyTasksLists   0x000500       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xDelayedTaskList1   0x000521       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xDelayedTaskList2   0x00052c       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        pxDelayedTaskList   0x000537       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+pxOverflowDelayedTaskList   0x000539       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xPendingReadyList   0x00053b       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+ xTasksWaitingTermination   0x000546       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       xSuspendedTaskList   0x000551       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+           xQueueRegistry   0x00055c       data     extern H:\ECNG3006\lab2.2\L02_816007689\queue.c
+                   Queue1   0x000584       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             Stimereceive   0x000586       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                   unread   0x000588       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  Sunread   0x00058a       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                  timeget   0x00058c       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                 spaceget   0x00059a       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+             pxCurrentTCB   0x0005a8       data     extern H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+uxDeletedTasksWaitingCleanUp   0x0005aa       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+   uxCurrentNumberOfTasks   0x0005ab       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+               xTickCount   0x0005ac       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+       uxTopReadyPriority   0x0005b0       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+        xSchedulerRunning   0x0005b1       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            uxPendedTicks   0x0005b2       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+            xYieldPending   0x0005b3       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          xNumOfOverflows   0x0005b4       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+             uxTaskNumber   0x0005b5       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     xNextTaskUnblockTime   0x0005b6       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+          xIdleTaskHandle   0x0005ba       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+     uxSchedulerSuspended   0x0005bc       data     static H:\ECNG3006\lab2.2\L02_816007689\tasks.c
+                     prom   0x0005bd       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0005c0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0005c2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0005c4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            xNextFreeByte   0x0005c7       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+           pucAlignedHeap   0x0005c9       data     static H:\ECNG3006\lab2.2\L02_816007689\heap_1.c
+                  stopped   0x0005cb       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                Stimesend   0x0005cd       data     extern H:\ECNG3006\lab2.2\L02_816007689\code_lab2_5.c
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+
+
