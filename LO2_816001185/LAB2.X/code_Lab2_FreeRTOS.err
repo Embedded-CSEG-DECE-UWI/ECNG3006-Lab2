@@ -1,0 +1,4 @@
+Warning[2058] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_FreeRTOS.c 54 : call of function without prototype
+Warning[2058] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_FreeRTOS.c 59 : call of function without prototype
+Warning[2066] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_FreeRTOS.c 115 : type qualifier mismatch in assignment
+Warning[2066] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_FreeRTOS.c 116 : type qualifier mismatch in assignment

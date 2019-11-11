@@ -1,0 +1,8 @@
+Warning[2074] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 70 : location PRODH specified in the interrupt save list is redundant
+Warning[2074] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 70 : location PRODL specified in the interrupt save list is redundant
+Warning[2074] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 70 : location TABLAT specified in the interrupt save list is redundant
+Warning[2074] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 70 : location .tmpdata specified in the interrupt save list is redundant
+Warning[2058] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 60 : call of function without prototype
+Warning[2058] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 65 : call of function without prototype
+Warning[2066] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 158 : type qualifier mismatch in assignment
+Warning[2066] E:\ECNG3006\LO2_816001185\LAB2.X\code_Lab2_4.c 159 : type qualifier mismatch in assignment
